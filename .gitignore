@@ -1,5 +1,177 @@
-*.bak
-*.gho
-*.ori
-*.orig
+#.NET and C# .gitignore for Visual Studio 2022 and JetBrains RiderVisual Studio 临时文件
+Build/
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+#Rider 临时文件
+.idea/
+*.sln.iml
+.idea/
+#构建结果
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+msbuild.log
+msbuild.err
+msbuild.wrn
+#Visual Studio 生成的文件
+*_i.c
+*_p.c
+*_i.h
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
 *.tmp
+*.tmp_proj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+#Visual Studio 缓存文件
+ipch/
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+*.VC.db
+*.VC.VC.opendb
+#Visual Studio 分析工具
+*.psess
+*.vsp
+*.vspx
+*.sap
+#NuGet 包
+*.nupkg
+#NuGet Symbol 包
+*.snupkg
+#包文件夹可以被重新生成，所以可以忽略
+*/[Pp]ackages/
+#除非你想要检入包的源代码
+!**/[Pp]ackages/build/
+#如果使用 NuGet 包恢复，则忽略这些文件
+*.nuget.props
+*.nuget.targets
+#Windows Store应用程序包目录
+AppPackages/
+BundleArtifacts/
+Package.StoreAssociation.xml
+_pkginfo.txt
+*.appx
+*.appxbundle
+*.appxupload
+SQL Server 文件
+*.mdf
+*.ldf
+*.ndf
+#业务智能项目
+*.rdl.data
+*.bim.layout
+.bim_.settings
+*.rptproj.rsuser
+*- [Bb]ackup.rdl
+*- [Bb]ackup ([0-9]).rdl
+*- [Bb]ackup ([0-9][0-9]).rdl
+Microsoft Fakes
+FakesAssemblies/
+#GhostDoc 插件设置文件
+*.GhostDoc.xml
+#节点依赖项
+node_modules/
+#Visual Studio 缓存/选项 目录
+.vs/
+#本地历史记录文件
+History/
+#测试覆盖率报告
+*.coverage
+*.coveragexml
+Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+TeamCity
+_TeamCity*
+DotCover
+*.dotCover
+#其他 Rider 缓存目录
+.idea/
+#Mac 系统文件
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+#Windows 系统文件
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+#Linux 系统文件
+*~
+Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+文件备份
+*.[Bb]ak
+*.swp
+*~.nib
+#特定于 Rider 的设置
+*.sln.DotSettings.user
+*.csproj.DotSettings.user
+#Blazor WASM 的特定文件
+/wwwroot/service-worker.js
+**/wwwroot/service-worker-assets.js
+ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+#MSTest 测试结果
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+代码覆盖结果
+*.coverage
+*.coveragexml
+NCrunch
+NCrunch*
+.crunch.local.xml
+nCrunchTemp_*
+#Azure 部署包
+csx/
+*.build.csdef
+#本地 .NET CLI 工具
+.dotnet/
+.packages/
