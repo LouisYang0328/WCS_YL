@@ -1,0 +1,290 @@
+{
+  "ProjectSn": "",
+  "Directory": "",
+  "Databases": [
+    {
+      "ID": "20250903094725398",
+      "Name": "wcs_yl",
+      "Desc": "",
+      "DataSource": "127.0.0.1",
+      "Database": "wcs_yl",
+      "UserID": "sa",
+      "Password": "Ly2858212418",
+      "Timeout": 3,
+      "IsDefault": true,
+      "Type": "SqlServer",
+      "Special": [],
+      "ConnStr": ""
+    }
+  ],
+  "Redis": [
+    {
+      "ID": "20250516183302930",
+      "Name": "YLRedis",
+      "Desc": "默认",
+      "ServerIP": "127.0.0.1",
+      "ServerPort": 6379,
+      "Auth": "Hc#123.456",
+      "DB": "DB0",
+      "MaxReadPool": 1000,
+      "MaxWritePool": 1000,
+      "IsDefault": true,
+      "Host": "Hc#123.456@127.0.0.1:6379",
+      "FullName": "Conn.YLRedis"
+    }
+  ],
+  "Sqlite": [],
+  "Logs": [
+    {
+      "ID": "20250516183302930",
+      "Name": "YLLog",
+      "Desc": "默认",
+      "DbDir": "D:\\WCS.LogDB\\WCS_Template",
+      "DbFile": "",
+      "DbPath": "D:/WCS.LogDB/WCS_Template",
+      "AppName": "WCS",
+      "DelDays": 7,
+      "DelLevel": 3,
+      "IsLogInfo": true,
+      "IsLogDebug": true,
+      "IsLogWarn": true,
+      "IsLogError": true,
+      "IsDefault": true,
+      "FullName": "Conn.YLLog",
+      "Type": "MongoDB",
+      "Targets": [
+        "File",
+        "Mongo"
+      ],
+      "Server": "localhost",
+      "Port": "27017",
+      "Db": "WCS",
+      "User": "admin",
+      "Pwd": "123456",
+      "ConnTimeout": 3000,
+      "SocketTimeout": 5000,
+      "ConnectionString": "mongodb://admin:123456@localhost:27017?connectTimeoutMS=3000&socketTimeoutMS=5000",
+      "IsDelInfo": true,
+      "IsDelDebug": true,
+      "IsDelWarn": true,
+      "IsDelError": false,
+      "DelLevels": "DEBUG,INFO,WARN"
+    }
+  ],
+  "AppConfs": [
+    {
+      "ID": "20250516183638320",
+      "Key": "DeviceNo",
+      "Value": "YBLK",
+      "Desc": "",
+      "Rule": "",
+      "Visible": true,
+      "IsPwd": false
+    },
+    {
+      "ID": "20250516183638471",
+      "Key": "DeviceName",
+      "Value": "优倍立库",
+      "Desc": "",
+      "Rule": "",
+      "Visible": true,
+      "IsPwd": false
+    },
+    {
+      "ID": "20251209110803307",
+      "Key": "1002",
+      "Value": "YLLK-01-001-01",
+      "Desc": "",
+      "Rule": "",
+      "Visible": true,
+      "IsPwd": false
+    }
+  ],
+  "DefaultAppConfs": [
+    {
+      "ID": "20250516183302930",
+      "Key": "InstanceLimit",
+      "Value": "1",
+      "Desc": "启动实例数量限制",
+      "Rule": "^^([1-9][0-9]*)$",
+      "Visible": true,
+      "IsPwd": false
+    },
+    {
+      "ID": "20250516183302930",
+      "Key": "AutoRunPlc",
+      "Value": "1",
+      "Desc": "是否自动启动PLC(1是,0否)",
+      "Rule": "^[0-1]$",
+      "Visible": true,
+      "IsPwd": false
+    },
+    {
+      "ID": "20250516183302930",
+      "Key": "LogDir",
+      "Value": "D:\\WCS.LogDB",
+      "Desc": "日志目录",
+      "Rule": "",
+      "Visible": false,
+      "IsPwd": false
+    },
+    {
+      "ID": "20250516183302930",
+      "Key": "LogFile",
+      "Value": "WCS_TemplateLog",
+      "Desc": "日志文件名",
+      "Rule": "",
+      "Visible": false,
+      "IsPwd": false
+    },
+    {
+      "ID": "20250516183302930",
+      "Key": "LogDelDays",
+      "Value": "30",
+      "Desc": "日志保存期限(天)",
+      "Rule": "",
+      "Visible": false,
+      "IsPwd": false
+    },
+    {
+      "ID": "20250516183302930",
+      "Key": "LogDelLevel",
+      "Value": "3",
+      "Desc": "日志删除等级",
+      "Rule": "",
+      "Visible": false,
+      "IsPwd": false
+    },
+    {
+      "ID": "20250516183302930",
+      "Key": "LogDebug",
+      "Value": "1",
+      "Desc": "是否开启调试日志Debug(1是,0否)",
+      "Rule": "",
+      "Visible": false,
+      "IsPwd": false
+    },
+    {
+      "ID": "20250516183302930",
+      "Key": "LogInfo",
+      "Value": "1",
+      "Desc": "是否开启通知日志Info(1是,0否)",
+      "Rule": "",
+      "Visible": false,
+      "IsPwd": false
+    },
+    {
+      "ID": "20250516183302930",
+      "Key": "LogWarn",
+      "Value": "1",
+      "Desc": "是否开启警告日志Warn(1是,0否)",
+      "Rule": "",
+      "Visible": false,
+      "IsPwd": false
+    },
+    {
+      "ID": "20250516183302930",
+      "Key": "LogError",
+      "Value": "1",
+      "Desc": "是否开启错误日志Error(1是,0否)",
+      "Rule": "",
+      "Visible": false,
+      "IsPwd": false
+    },
+    {
+      "ID": "20250516183302930",
+      "Key": "RedisServerSession",
+      "Value": "Hc#123.456@127.0.0.1:6379",
+      "Desc": "Redis服务地址",
+      "Rule": "",
+      "Visible": false,
+      "IsPwd": false
+    },
+    {
+      "ID": "20250516183302930",
+      "Key": "RedisMaxReadPool",
+      "Value": "1000",
+      "Desc": "Redis读取池",
+      "Rule": "",
+      "Visible": false,
+      "IsPwd": false
+    },
+    {
+      "ID": "20250516183302930",
+      "Key": "RedisMaxWritePool",
+      "Value": "1000",
+      "Desc": "Redis写入池",
+      "Rule": "",
+      "Visible": false,
+      "IsPwd": false
+    },
+    {
+      "ID": "20250516183630499",
+      "Key": "AutoRunPLC",
+      "Value": "1",
+      "Desc": "是否自动启动PLC(1是,0否)",
+      "Rule": "^[0-1]$",
+      "Visible": true,
+      "IsPwd": false
+    },
+    {
+      "ID": "20250516183630499",
+      "Key": "RedisDefaultDb",
+      "Value": "DB0",
+      "Desc": "Redis数据库",
+      "Rule": "",
+      "Visible": false,
+      "IsPwd": false
+    },
+    {
+      "ID": "20250519152054282",
+      "Key": "MongoConnStr",
+      "Value": "mongodb://admin:123456@localhost:27017?connectTimeoutMS=3000&amp;socketTimeoutMS=5000",
+      "Desc": "MongoConnStr",
+      "Rule": "",
+      "Visible": false,
+      "IsPwd": false
+    },
+    {
+      "ID": "20250519152054282",
+      "Key": "MongoDb",
+      "Value": "WCS",
+      "Desc": "MongoDb",
+      "Rule": "",
+      "Visible": false,
+      "IsPwd": false
+    },
+    {
+      "ID": "20250605134033986",
+      "Key": "MongoDb_PLC",
+      "Value": "WCS_PLC",
+      "Desc": "MongoDb_PLC",
+      "Rule": "",
+      "Visible": false,
+      "IsPwd": false
+    },
+    {
+      "ID": "20250903095135287",
+      "Key": "Lang",
+      "Value": "",
+      "Desc": "默认语言",
+      "Rule": "",
+      "Visible": false,
+      "IsPwd": false
+    },
+    {
+      "ID": "20251202115639378",
+      "Key": "wcs_yl_TrimEndSpace",
+      "Value": "false",
+      "Desc": "wcs_yl去除char(n)末尾空格",
+      "Rule": "",
+      "Visible": false,
+      "IsPwd": false
+    }
+  ],
+  "WebSvc": [],
+  "HttpSvc": [],
+  "Globals": [],
+  "CreationTime": "2025-05-16 18:33:02",
+  "LastWriteTime": "2025-12-16 10:47:43"
+}

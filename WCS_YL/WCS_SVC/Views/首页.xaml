@@ -1,0 +1,5 @@
+<Window x:Class="GZ.Projects.WCS_Template.首页" x:Name="首页Window" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:GZ.Projects.WCS_Template" Width="800" Height="450" Title="首页" mc:Ignorable="d">
+  <Grid>
+    <Image Source="../资源/首页.png" Stretch="Fill" />
+  </Grid>
+</Window>

@@ -1,0 +1,1650 @@
+{
+  "ProjectSn": "",
+  "Directory": "",
+  "Snippets": [
+    {
+      "ID": "20250516191049749",
+      "Name": "业务逻辑",
+      "Desc": "",
+      "Content": "",
+      "ContentCopy": "",
+      "ParentID": "",
+      "Children": [
+        {
+          "ID": "20250516191123410",
+          "Name": "工程打开",
+          "Desc": "",
+          "Content": "\r\n\r\nList<DictItem> List_PlcFields = new List<DictItem>\r\n{\r\n\tnew DictItem { DictName = \"无\", DictValue = \"无\" },\r\n\tnew DictItem { DictName = \"tag_id\", DictValue = \"设备变量\" },\r\n\tnew DictItem { DictName = \"position\", DictValue = \"位置\" },\r\n\tnew DictItem { DictName = \"old_value\", DictValue = \"旧值\" },\r\n\tnew DictItem { DictName = \"new_value\", DictValue = \"新值\" },\r\n\t//new DictItem { DictName = \"timestamp\", DictValue = \"时间\" },\r\n\tnew DictItem { DictName = \"timespan\", DictValue = \"间隔（秒）\" },\r\n\tnew DictItem { DictName = \"next\", DictValue = \"下一位置\" },\r\n\tnew DictItem { DictName = \"flag\", DictValue = \"标记（最新值）\" }\r\n};\r\nList<DictItem> List_TableType = new List<DictItem>\r\n{\r\n\tnew DictItem { DictName = \"DEBUG\", DictValue = \"调试\" },\r\n\tnew DictItem { DictName = \"INFO\", DictValue = \"信息\" },\r\n\tnew DictItem { DictName = \"WARN\", DictValue = \"警告\" },\r\n\tnew DictItem { DictName = \"ERROR\", DictValue = \"报警\" }\r\n};\r\n//PLC变更日志点位表\r\nList<DictItem> List_LogPrmTableType = new List<DictItem>\r\n{\r\n\tnew DictItem { DictName = \"PLC1\", DictValue = \"测试PLC\" },\r\n};\r\n\r\nList<DictItem> List_Logs = new List<DictItem>\r\n{\r\n\t\r\n\tnew DictItem { DictName = \"无\", DictValue = \"无\" },\r\n\t// 基础信息\r\n\t//new DictItem { DictName = \"_id\", DictValue = \"日志ID\" },\r\n\t//new DictItem { DictName = \"SequenceId\", DictValue = \"序号\" },\r\n\tnew DictItem { DictName = \"Title\", DictValue = \"日志标题\" },\r\n\tnew DictItem { DictName = \"Message\", DictValue = \"日志内容\" },\r\n\t\r\n\t// 时间相关\r\n\t//new DictItem { DictName = \"START\", DictValue = \"开始时间\" },\r\n\t//new DictItem { DictName = \"END\", DictValue = \"结束时间\" },\r\n\t//new DictItem { DictName = \"TimeSpan\", DictValue = \"持续时间(秒)\" },\r\n\t//new DictItem { DictName = \"UTC_TIME\", DictValue = \"UTC时间\" },\r\n\tnew DictItem { DictName = \"LOCAL_TIME\", DictValue = \"日志时间\" },\r\n\t\r\n\t// 上下文信息\r\n\tnew DictItem { DictName = \"Category\", DictValue = \"分类\" },\r\n\t//new DictItem { DictName = \"User\", DictValue = \"用户名\" },\r\n\t//new DictItem { DictName = \"Level\", DictValue = \"日志级别\" },\r\n\t//new DictItem { DictName = \"CallSite\", DictValue = \"调用位置\" },\r\n\t//new DictItem { DictName = \"LineNo\", DictValue = \"行号\" },\r\n\t//new DictItem { DictName = \"Logger\", DictValue = \"日志类\" },\r\n\t\r\n\t// 系统信息\r\n\t//new DictItem { DictName = \"MachineName\", DictValue = \"计算机名\" },\r\n\t//new DictItem { DictName = \"ProcessId\", DictValue = \"进程ID\" },\r\n\t//new DictItem { DictName = \"ProcessName\", DictValue = \"进程名\" },\r\n\t\r\n\t// 业务扩展\r\n\tnew DictItem { DictName = \"Tags\", DictValue = \"标签\" },\r\n\t//new DictItem { DictName = \"Data\", DictValue = \"附加数据\" },\r\n\tnew DictItem { DictName = \"LogicNo\", DictValue = \"业务编号\" }\r\n};\r\nTag.UI.点位历史表更记录.List_Field=List_PlcFields.ToList();\r\nTag.UI.点位历史表更记录.List_TableType=List_LogPrmTableType.ToList();\r\nTag.UI.点位历史表更记录.Text_TableType=\"PLC1\";\r\nTag.UI.日志查询.List_Field=List_Logs.ToList();\r\nTag.UI.日志查询.List_TableType=List_TableType.ToList();\r\nTag.UI.日志查询.Text_TableType=\"INFO\";\r\n\r\n//var result1 = MongoDbHelper.Distinctss<LogEntry>(\r\n//\t\"INFO\",//表名\r\n//\t\"CATEGORY\"\r\n//);\r\n//var result2 = MongoDbHelper.Distinctss<LogEntry>(\r\n//\t\"DEBUG\",//表名\r\n//\t\"CATEGORY\"\r\n//);\r\n//var result3 = MongoDbHelper.Distinctss<LogEntry>(\r\n//\t\"WARN\",//表名\r\n//\t\"CATEGORY\"\r\n//);\r\n//var result4 = MongoDbHelper.Distinctss<LogEntry>(\r\n//\t\"ERROR\",//表名\r\n//\t\"CATEGORY\"\r\n//);\r\n//List<string> mergedList = new List<string>();\r\n//mergedList = result1.Union(result2)\r\n//\t.Union(result3)\r\n//\t.Union(result4)\r\n//\t.ToList();\r\n//mergedList.Insert(0, \"无\");\r\n//Tag.UI.日志查询.Text_LogType = \"无\";\r\n//Tag.UI.日志查询.List_LogType=mergedList;",
+          "ContentCopy": "\r\n\r\nList<DictItem> List_PlcFields = new List<DictItem>\r\n{\r\n\tnew DictItem { DictName = \"无\", DictValue = \"无\" },\r\n\tnew DictItem { DictName = \"tag_id\", DictValue = \"设备变量\" },\r\n\tnew DictItem { DictName = \"position\", DictValue = \"位置\" },\r\n\tnew DictItem { DictName = \"old_value\", DictValue = \"旧值\" },\r\n\tnew DictItem { DictName = \"new_value\", DictValue = \"新值\" },\r\n\t//new DictItem { DictName = \"timestamp\", DictValue = \"时间\" },\r\n\tnew DictItem { DictName = \"timespan\", DictValue = \"间隔（秒）\" },\r\n\tnew DictItem { DictName = \"next\", DictValue = \"下一位置\" },\r\n\tnew DictItem { DictName = \"flag\", DictValue = \"标记（最新值）\" }\r\n};\r\nList<DictItem> List_TableType = new List<DictItem>\r\n{\r\n\tnew DictItem { DictName = \"DEBUG\", DictValue = \"调试\" },\r\n\tnew DictItem { DictName = \"INFO\", DictValue = \"信息\" },\r\n\tnew DictItem { DictName = \"WARN\", DictValue = \"警告\" },\r\n\tnew DictItem { DictName = \"ERROR\", DictValue = \"报警\" }\r\n};\r\n//PLC变更日志点位表\r\nList<DictItem> List_LogPrmTableType = new List<DictItem>\r\n{\r\n\tnew DictItem { DictName = \"PLC1\", DictValue = \"测试PLC\" },\r\n};\r\n\r\nList<DictItem> List_Logs = new List<DictItem>\r\n{\r\n\t\r\n\tnew DictItem { DictName = \"无\", DictValue = \"无\" },\r\n\t// 基础信息\r\n\t//new DictItem { DictName = \"_id\", DictValue = \"日志ID\" },\r\n\t//new DictItem { DictName = \"SequenceId\", DictValue = \"序号\" },\r\n\tnew DictItem { DictName = \"Title\", DictValue = \"日志标题\" },\r\n\tnew DictItem { DictName = \"Message\", DictValue = \"日志内容\" },\r\n\t\r\n\t// 时间相关\r\n\t//new DictItem { DictName = \"START\", DictValue = \"开始时间\" },\r\n\t//new DictItem { DictName = \"END\", DictValue = \"结束时间\" },\r\n\t//new DictItem { DictName = \"TimeSpan\", DictValue = \"持续时间(秒)\" },\r\n\t//new DictItem { DictName = \"UTC_TIME\", DictValue = \"UTC时间\" },\r\n\tnew DictItem { DictName = \"LOCAL_TIME\", DictValue = \"日志时间\" },\r\n\t\r\n\t// 上下文信息\r\n\tnew DictItem { DictName = \"Category\", DictValue = \"分类\" },\r\n\t//new DictItem { DictName = \"User\", DictValue = \"用户名\" },\r\n\t//new DictItem { DictName = \"Level\", DictValue = \"日志级别\" },\r\n\t//new DictItem { DictName = \"CallSite\", DictValue = \"调用位置\" },\r\n\t//new DictItem { DictName = \"LineNo\", DictValue = \"行号\" },\r\n\t//new DictItem { DictName = \"Logger\", DictValue = \"日志类\" },\r\n\t\r\n\t// 系统信息\r\n\t//new DictItem { DictName = \"MachineName\", DictValue = \"计算机名\" },\r\n\t//new DictItem { DictName = \"ProcessId\", DictValue = \"进程ID\" },\r\n\t//new DictItem { DictName = \"ProcessName\", DictValue = \"进程名\" },\r\n\t\r\n\t// 业务扩展\r\n\tnew DictItem { DictName = \"Tags\", DictValue = \"标签\" },\r\n\t//new DictItem { DictName = \"Data\", DictValue = \"附加数据\" },\r\n\tnew DictItem { DictName = \"LogicNo\", DictValue = \"业务编号\" }\r\n};\r\nTag.UI.点位历史表更记录.List_Field=List_PlcFields.ToList();\r\nTag.UI.点位历史表更记录.List_TableType=List_LogPrmTableType.ToList();\r\nTag.UI.点位历史表更记录.Text_TableType=\"PLC1\";\r\nTag.UI.日志查询.List_Field=List_Logs.ToList();\r\nTag.UI.日志查询.List_TableType=List_TableType.ToList();\r\nTag.UI.日志查询.Text_TableType=\"INFO\";\r\n\r\n//var result1 = MongoDbHelper.Distinctss<LogEntry>(\r\n//\t\"INFO\",//表名\r\n//\t\"CATEGORY\"\r\n//);\r\n//var result2 = MongoDbHelper.Distinctss<LogEntry>(\r\n//\t\"DEBUG\",//表名\r\n//\t\"CATEGORY\"\r\n//);\r\n//var result3 = MongoDbHelper.Distinctss<LogEntry>(\r\n//\t\"WARN\",//表名\r\n//\t\"CATEGORY\"\r\n//);\r\n//var result4 = MongoDbHelper.Distinctss<LogEntry>(\r\n//\t\"ERROR\",//表名\r\n//\t\"CATEGORY\"\r\n//);\r\n//List<string> mergedList = new List<string>();\r\n//mergedList = result1.Union(result2)\r\n//\t.Union(result3)\r\n//\t.Union(result4)\r\n//\t.ToList();\r\n//mergedList.Insert(0, \"无\");\r\n//Tag.UI.日志查询.Text_LogType = \"无\";\r\n//Tag.UI.日志查询.List_LogType=mergedList;",
+          "ParentID": "20250516191049749",
+          "Children": [],
+          "Type": "Program",
+          "Property": {
+            "SyncExec": "True",
+            "RepeatExec": "None",
+            "ExceCount": 1,
+            "ExceInternal": 36000000,
+            "StartCondition": {
+              "Type": "Project",
+              "Event": "Open",
+              "Expression": "",
+              "Judge": "",
+              "Command": {},
+              "HmiEvent": {}
+            },
+            "EndCondition": {
+              "Type": "None",
+              "Event": "",
+              "Expression": "",
+              "Judge": "",
+              "Command": {},
+              "HmiEvent": {}
+            }
+          },
+          "FullName": "业务逻辑.工程打开",
+          "ParentFullName": "业务逻辑",
+          "Enabled": "Enabled"
+        },
+        {
+          "ID": "20250904100615865",
+          "Name": "同步任务状态至WMS",
+          "Desc": "",
+          "Content": "\t\t\t\tstring msg = $\"\\r\\n[状态同步]：Start{DateTime.Now.ToString(\"yyyy/MM/dd HH:mm:ss:fff\")}\";\r\nDateTime StartTime = DateTime.Now;\r\nbool IsWriteLog = false;\r\ntry\r\n{\r\n\tList<SystemSynchronizationEntity> SystemSynchronization = null;\r\n\tISystemSynchronizationRepository SystemSynchronizationRepository = new SystemSynchronizationRepository();\r\n\tSystemSynchronization = SystemSynchronizationRepository.FindList(t => t.syn_status == 0 && t.syn_direction == 1).OrderBy(t => t.ope_time).ToList();\r\n\r\n\tif (SystemSynchronization != null && SystemSynchronization.Count > 0)\r\n\t{\r\n\t\tWCSTOWMS wms = new WCSTOWMS();\r\n\t\tAutoScanApp ausc = new AutoScanApp();\r\n\t\tforeach (var item in SystemSynchronization)\r\n\t\t{\r\n\t\t\tIsWriteLog = true;\r\n\t\t\tToWmsNotifyTaskStatusRequest ToWmsNotifyTaskStatusRequest = new ToWmsNotifyTaskStatusRequest();\r\n\t\t\tToWmsNotifyTaskStatusRequest.reqId = Guid.NewGuid().ToString();\r\n\t\t\tToWmsNotifyTaskStatusRequest.status = item.ope_type;\r\n\t\t\tToWmsNotifyTaskStatusRequest.taskNo = item.task_no;\r\n\t\t\tToWmsNotifyTaskStatusRequest.loc = item.reverse_2;\r\n\t\t\tToWmsNotifyTaskStatusRequest.errCode = item.ope_memo;\r\n\t\t\tToWmsNotifyTaskStatusRequest.deviceNo = item.ope_device_no;\r\n\t\t\tToWmsNotifyTaskStatusRequest.reqTime = DateTime.Now.ToString();\r\n\r\n\t\t\tvar wcor = wms.FeedInfoToWms(ToWmsNotifyTaskStatusRequest, out string errorMsg);\r\n\t\t\tif (wcor == null || wcor.code != 200)\r\n\t\t\t{\r\n\t\t\t\tmsg += $\"\\r\\n\\t任务状态更新请求失败，上报任务号: {item.task_no};错误信息：{errorMsg}{DateTime.Now.ToString(\"yyyy/MM/dd HH:mm:ss:fff\")}\";\r\n\t\t\t\tcontinue;\r\n\t\t\t}\r\n\t\t\tmsg += $\"\\r\\n\\t任务状态更新请求成功{DateTime.Now.ToString(\"yyyy/MM/dd HH:mm:ss:fff\")}\";\r\n\t\t\titem.syn_status = 1;\r\n\t\t\titem.syn_time = DateTime.Now;\r\n\t\t\tbool resultms = ausc.SystemSynchronizationUpdate(item, out string err);\r\n\t\t\tif (!resultms)\r\n\t\t\t{\r\n\t\t\t\tmsg += $\"\\r\\n\\t任务状态更新数据库失败，请求信息：[{item.task_no}];错误信息：{err}{DateTime.Now.ToString(\"yyyy/MM/dd HH:mm:ss:fff\")}\";\r\n\t\t\t}\r\n\t\t\tmsg += $\"\\r\\n\\t数据提交成功{DateTime.Now.ToString(\"yyyy/MM/dd HH:mm:ss:fff\")}\";\r\n\t\t}\r\n\t}\r\n\r\n}\r\ncatch (Exception ex)\r\n{\r\n\tmsg += $\"\\r\\n\\t[Error]{ex}\";\r\n\tConn.WCSLOG.Error(1, \"同步任务状态至WMS\", 1, msg);\r\n}\r\nfinally\r\n{\r\n\tif (IsWriteLog)\r\n\t{\r\n\t\tmsg += $\"\\r\\n\\t[EndTime]{DateTime.Now.ToString(\"yyyy/MM/dd HH:mm:ss:fff\")}\";\r\n\t\tmsg += $\"\\r\\n\\t[SpanTime]{DateTime.Now - StartTime}\";\r\n\t\tmsg += $\"\\r\\n[状态同步]End\";\r\n\t\tConn.WCSLOG.Info(1, \"同步任务状态至WMS\", 1, msg);\r\n\t}\r\n}",
+          "ContentCopy": "\t\t\t\tstring msg = $\"\\r\\n[状态同步]：Start{DateTime.Now.ToString(\"yyyy/MM/dd HH:mm:ss:fff\")}\";\r\nDateTime StartTime = DateTime.Now;\r\nbool IsWriteLog = false;\r\ntry\r\n{\r\n\tList<SystemSynchronizationEntity> SystemSynchronization = null;\r\n\tISystemSynchronizationRepository SystemSynchronizationRepository = new SystemSynchronizationRepository();\r\n\tSystemSynchronization = SystemSynchronizationRepository.FindList(t => t.syn_status == 0 && t.syn_direction == 1).OrderBy(t => t.ope_time).ToList();\r\n\r\n\tif (SystemSynchronization != null && SystemSynchronization.Count > 0)\r\n\t{\r\n\t\tWCSTOWMS wms = new WCSTOWMS();\r\n\t\tAutoScanApp ausc = new AutoScanApp();\r\n\t\tforeach (var item in SystemSynchronization)\r\n\t\t{\r\n\t\t\tIsWriteLog = true;\r\n\t\t\tToWmsNotifyTaskStatusRequest ToWmsNotifyTaskStatusRequest = new ToWmsNotifyTaskStatusRequest();\r\n\t\t\tToWmsNotifyTaskStatusRequest.reqId = Guid.NewGuid().ToString();\r\n\t\t\tToWmsNotifyTaskStatusRequest.status = item.ope_type;\r\n\t\t\tToWmsNotifyTaskStatusRequest.taskNo = item.task_no;\r\n\t\t\tToWmsNotifyTaskStatusRequest.loc = item.reverse_2;\r\n\t\t\tToWmsNotifyTaskStatusRequest.errCode = item.ope_memo;\r\n\t\t\tToWmsNotifyTaskStatusRequest.deviceNo = item.ope_device_no;\r\n\t\t\tToWmsNotifyTaskStatusRequest.reqTime = DateTime.Now.ToString();\r\n\r\n\t\t\tvar wcor = wms.FeedInfoToWms(ToWmsNotifyTaskStatusRequest, out string errorMsg);\r\n\t\t\tif (wcor == null || wcor.code != 200)\r\n\t\t\t{\r\n\t\t\t\tmsg += $\"\\r\\n\\t任务状态更新请求失败，上报任务号: {item.task_no};错误信息：{errorMsg}{DateTime.Now.ToString(\"yyyy/MM/dd HH:mm:ss:fff\")}\";\r\n\t\t\t\tcontinue;\r\n\t\t\t}\r\n\t\t\tmsg += $\"\\r\\n\\t任务状态更新请求成功{DateTime.Now.ToString(\"yyyy/MM/dd HH:mm:ss:fff\")}\";\r\n\t\t\titem.syn_status = 1;\r\n\t\t\titem.syn_time = DateTime.Now;\r\n\t\t\tbool resultms = ausc.SystemSynchronizationUpdate(item, out string err);\r\n\t\t\tif (!resultms)\r\n\t\t\t{\r\n\t\t\t\tmsg += $\"\\r\\n\\t任务状态更新数据库失败，请求信息：[{item.task_no}];错误信息：{err}{DateTime.Now.ToString(\"yyyy/MM/dd HH:mm:ss:fff\")}\";\r\n\t\t\t}\r\n\t\t\tmsg += $\"\\r\\n\\t数据提交成功{DateTime.Now.ToString(\"yyyy/MM/dd HH:mm:ss:fff\")}\";\r\n\t\t}\r\n\t}\r\n\r\n}\r\ncatch (Exception ex)\r\n{\r\n\tmsg += $\"\\r\\n\\t[Error]{ex}\";\r\n\tConn.WCSLOG.Error(1, \"同步任务状态至WMS\", 1, msg);\r\n}\r\nfinally\r\n{\r\n\tif (IsWriteLog)\r\n\t{\r\n\t\tmsg += $\"\\r\\n\\t[EndTime]{DateTime.Now.ToString(\"yyyy/MM/dd HH:mm:ss:fff\")}\";\r\n\t\tmsg += $\"\\r\\n\\t[SpanTime]{DateTime.Now - StartTime}\";\r\n\t\tmsg += $\"\\r\\n[状态同步]End\";\r\n\t\tConn.WCSLOG.Info(1, \"同步任务状态至WMS\", 1, msg);\r\n\t}\r\n}",
+          "ParentID": "20250516191049749",
+          "Children": [],
+          "Type": "Program",
+          "Property": {
+            "SyncExec": "False",
+            "RepeatExec": "Until",
+            "ExceCount": 1,
+            "ExceInternal": 3000,
+            "StartCondition": {
+              "Type": "Project",
+              "Event": "Open",
+              "Expression": "",
+              "Judge": "",
+              "Command": {},
+              "HmiEvent": {}
+            },
+            "EndCondition": {
+              "Type": "Project",
+              "Event": "Close",
+              "Expression": "",
+              "Judge": "",
+              "Command": {},
+              "HmiEvent": {}
+            }
+          },
+          "FullName": "业务逻辑.同步任务状态至WMS",
+          "ParentFullName": "业务逻辑",
+          "Enabled": "Enabled"
+        },
+        {
+          "ID": "20250904100616725",
+          "Name": "上报设备异常至WMS",
+          "Desc": "",
+          "Content": "\t\t\t\tstring msg = $\"\\r\\n[设备异常上报]：Start{DateTime.Now.ToString(\"yyyy/MM/dd HH:mm:ss:fff\")}\";\r\nDateTime StartTime = DateTime.Now;\r\nbool IsWriteLog = false;\r\ntry\r\n{\r\n\tList<DeviceErrorRecordEntity> DeviceErrorRecord = null;\r\n\tIDeviceErrorRecordRepository DeviceErrorRecordRepository = new DeviceErrorRecordRepository();\r\n\tDeviceErrorRecord = DeviceErrorRecordRepository.FindList(t => t.ErrorState == \"Error\").OrderBy(t => t.StartTime).ToList();\r\n\tif (DeviceErrorRecord != null && DeviceErrorRecord.Count > 0)\r\n\t{\r\n\t\tWCSTOWMS wms = new WCSTOWMS();\r\n\t\tAutoScanApp ausc = new AutoScanApp();\r\n\t\tforeach (var item in DeviceErrorRecord)\r\n\t\t{\r\n\t\t\tIsWriteLog = true;\r\n\t\t\tToWmsNotifyAlarmRequest ToWmsNotifyAlarmRequest = new ToWmsNotifyAlarmRequest();\r\n\t\t\tToWmsNotifyAlarmRequest.reqId = Guid.NewGuid().ToString();\r\n\t\t\tToWmsNotifyAlarmRequest.reqTime = DateTime.Now.ToString();\r\n\t\t\tToWmsNotifyAlarmRequest.deviceNo = item.DeviceNo;\r\n\t\t\tToWmsNotifyAlarmRequest.errCode = item.ErrorCode;\r\n\t\t\tToWmsNotifyAlarmRequest.errMsg = item.ErrorDesc;\r\n\t\t\t//deviceinfo dvinfo=new deviceinfo();\r\n\t\t\t//dvinfo.deviceNo=item.DeviceNo;\r\n\t\t\t//dvinfo.errCode=item.ErrorCode;\r\n\t\t\t//dvinfo.errMsg=item.ErrorDesc;\r\n\t\t\t//ToWmsNotifyAlarmRequest.deviceErrors.Add(dvinfo);\r\n\r\n\t\t\t//bool wmsInvList = wms.DeviceErrorsToWms(ToWmsNotifyAlarmRequest, out string errorMsg);\r\n\t\t\t//if (!wmsInvList)\r\n\t\t\t//{\r\n\t\t\t//\t//获取j信息失败\r\n\t\t\t//\tstring param = Json.ToJson(ToWmsNotifyAlarmRequest);\r\n\t\t\t//\tmsg += $\"\\r\\n\\t异常上报失败，请求信息：[{param}];错误信息：{errorMsg}{DateTime.Now.ToString(\"yyyy/MM/dd HH:mm:ss:fff\")}\";\r\n\t\t\t//\tcontinue;\r\n\t\t\t//}\r\n\t\t\tvar wcor = wms.DeviceErrorsToWms(ToWmsNotifyAlarmRequest, out string errorMsg);\r\n\t\t\tif (wcor == null || wcor.code != 200)\r\n\t\t\t{\r\n\t\t\t\tmsg += $\"\\r\\n\\t任务状态更新请求失败,错误信息：{errorMsg}{DateTime.Now.ToString(\"yyyy/MM/dd HH:mm:ss:fff\")}\";\r\n\t\t\t\tcontinue;\r\n\t\t\t}\r\n\t\t\tmsg += $\"\\r\\n\\t异常上报成功{DateTime.Now.ToString(\"yyyy/MM/dd HH:mm:ss:fff\")}\";\r\n\t\t\t//item.ErrorState = \"OK\";\r\n\t\t\t//bool resultms = ausc.DeviceErrorRecordnUpdate(item, out string err);\r\n\t\t\t//if (!resultms)\r\n\t\t\t//{\r\n\t\t\t//\tmsg += $\"\\r\\n\\t设备异常同步状态更新数据库失败，异常设备：[{item.DeviceNo}];错误信息：{err}{DateTime.Now.ToString(\"yyyy/MM/dd HH:mm:ss:fff\")}\";\r\n\t\t\t//}\r\n\t\t\t//msg += $\"\\r\\n\\t数据提交成功{DateTime.Now.ToString(\"yyyy/MM/dd HH:mm:ss:fff\")}\";\r\n\t\t}\r\n\t}\r\n\r\n}\r\ncatch (Exception ex)\r\n{\r\n\tmsg += $\"\\r\\n\\t[Error]{ex}\";\r\n\tConn.WCSLOG.Error(1, \"设备异常上报至WMS\", 1, msg);\r\n}\r\nfinally\r\n{\r\n\tif (IsWriteLog)\r\n\t{\r\n\t\tmsg += $\"\\r\\n\\t[EndTime]{DateTime.Now.ToString(\"yyyy/MM/dd HH:mm:ss:fff\")}\";\r\n\t\tmsg += $\"\\r\\n\\t[SpanTime]{DateTime.Now - StartTime}\";\r\n\t\tmsg += $\"\\r\\n[设备异常上报]End\";\r\n\t\tConn.WCSLOG.Info(1, \"设备异常上报至WMS\", 1, msg);\r\n\t}\r\n}",
+          "ContentCopy": "\t\t\t\tstring msg = $\"\\r\\n[设备异常上报]：Start{DateTime.Now.ToString(\"yyyy/MM/dd HH:mm:ss:fff\")}\";\r\nDateTime StartTime = DateTime.Now;\r\nbool IsWriteLog = false;\r\ntry\r\n{\r\n\tList<DeviceErrorRecordEntity> DeviceErrorRecord = null;\r\n\tIDeviceErrorRecordRepository DeviceErrorRecordRepository = new DeviceErrorRecordRepository();\r\n\tDeviceErrorRecord = DeviceErrorRecordRepository.FindList(t => t.ErrorState == \"Error\").OrderBy(t => t.StartTime).ToList();\r\n\tif (DeviceErrorRecord != null && DeviceErrorRecord.Count > 0)\r\n\t{\r\n\t\tWCSTOWMS wms = new WCSTOWMS();\r\n\t\tAutoScanApp ausc = new AutoScanApp();\r\n\t\tforeach (var item in DeviceErrorRecord)\r\n\t\t{\r\n\t\t\tIsWriteLog = true;\r\n\t\t\tToWmsNotifyAlarmRequest ToWmsNotifyAlarmRequest = new ToWmsNotifyAlarmRequest();\r\n\t\t\tToWmsNotifyAlarmRequest.reqId = Guid.NewGuid().ToString();\r\n\t\t\tToWmsNotifyAlarmRequest.reqTime = DateTime.Now.ToString();\r\n\t\t\tToWmsNotifyAlarmRequest.deviceNo = item.DeviceNo;\r\n\t\t\tToWmsNotifyAlarmRequest.errCode = item.ErrorCode;\r\n\t\t\tToWmsNotifyAlarmRequest.errMsg = item.ErrorDesc;\r\n\t\t\t//deviceinfo dvinfo=new deviceinfo();\r\n\t\t\t//dvinfo.deviceNo=item.DeviceNo;\r\n\t\t\t//dvinfo.errCode=item.ErrorCode;\r\n\t\t\t//dvinfo.errMsg=item.ErrorDesc;\r\n\t\t\t//ToWmsNotifyAlarmRequest.deviceErrors.Add(dvinfo);\r\n\r\n\t\t\t//bool wmsInvList = wms.DeviceErrorsToWms(ToWmsNotifyAlarmRequest, out string errorMsg);\r\n\t\t\t//if (!wmsInvList)\r\n\t\t\t//{\r\n\t\t\t//\t//获取j信息失败\r\n\t\t\t//\tstring param = Json.ToJson(ToWmsNotifyAlarmRequest);\r\n\t\t\t//\tmsg += $\"\\r\\n\\t异常上报失败，请求信息：[{param}];错误信息：{errorMsg}{DateTime.Now.ToString(\"yyyy/MM/dd HH:mm:ss:fff\")}\";\r\n\t\t\t//\tcontinue;\r\n\t\t\t//}\r\n\t\t\tvar wcor = wms.DeviceErrorsToWms(ToWmsNotifyAlarmRequest, out string errorMsg);\r\n\t\t\tif (wcor == null || wcor.code != 200)\r\n\t\t\t{\r\n\t\t\t\tmsg += $\"\\r\\n\\t任务状态更新请求失败,错误信息：{errorMsg}{DateTime.Now.ToString(\"yyyy/MM/dd HH:mm:ss:fff\")}\";\r\n\t\t\t\tcontinue;\r\n\t\t\t}\r\n\t\t\tmsg += $\"\\r\\n\\t异常上报成功{DateTime.Now.ToString(\"yyyy/MM/dd HH:mm:ss:fff\")}\";\r\n\t\t\t//item.ErrorState = \"OK\";\r\n\t\t\t//bool resultms = ausc.DeviceErrorRecordnUpdate(item, out string err);\r\n\t\t\t//if (!resultms)\r\n\t\t\t//{\r\n\t\t\t//\tmsg += $\"\\r\\n\\t设备异常同步状态更新数据库失败，异常设备：[{item.DeviceNo}];错误信息：{err}{DateTime.Now.ToString(\"yyyy/MM/dd HH:mm:ss:fff\")}\";\r\n\t\t\t//}\r\n\t\t\t//msg += $\"\\r\\n\\t数据提交成功{DateTime.Now.ToString(\"yyyy/MM/dd HH:mm:ss:fff\")}\";\r\n\t\t}\r\n\t}\r\n\r\n}\r\ncatch (Exception ex)\r\n{\r\n\tmsg += $\"\\r\\n\\t[Error]{ex}\";\r\n\tConn.WCSLOG.Error(1, \"设备异常上报至WMS\", 1, msg);\r\n}\r\nfinally\r\n{\r\n\tif (IsWriteLog)\r\n\t{\r\n\t\tmsg += $\"\\r\\n\\t[EndTime]{DateTime.Now.ToString(\"yyyy/MM/dd HH:mm:ss:fff\")}\";\r\n\t\tmsg += $\"\\r\\n\\t[SpanTime]{DateTime.Now - StartTime}\";\r\n\t\tmsg += $\"\\r\\n[设备异常上报]End\";\r\n\t\tConn.WCSLOG.Info(1, \"设备异常上报至WMS\", 1, msg);\r\n\t}\r\n}",
+          "ParentID": "20250516191049749",
+          "Children": [],
+          "Type": "Program",
+          "Property": {
+            "SyncExec": "False",
+            "RepeatExec": "Until",
+            "ExceCount": 1,
+            "ExceInternal": 3000,
+            "StartCondition": {
+              "Type": "Project",
+              "Event": "Open",
+              "Expression": "",
+              "Judge": "",
+              "Command": {},
+              "HmiEvent": {}
+            },
+            "EndCondition": {
+              "Type": "Project",
+              "Event": "Close",
+              "Expression": "",
+              "Judge": "",
+              "Command": {},
+              "HmiEvent": {}
+            }
+          },
+          "FullName": "业务逻辑.上报设备异常至WMS",
+          "ParentFullName": "业务逻辑",
+          "Enabled": "Enabled"
+        }
+      ],
+      "Type": "Group",
+      "Property": {
+        "SyncExec": "False",
+        "RepeatExec": "None",
+        "ExceCount": 1,
+        "ExceInternal": 3000,
+        "StartCondition": {
+          "Type": "None",
+          "Event": "",
+          "Expression": "",
+          "Judge": "",
+          "Command": {},
+          "HmiEvent": {}
+        },
+        "EndCondition": {
+          "Type": "None",
+          "Event": "",
+          "Expression": "",
+          "Judge": "",
+          "Command": {},
+          "HmiEvent": {}
+        }
+      },
+      "FullName": "业务逻辑",
+      "ParentFullName": "",
+      "Enabled": "Enabled"
+    },
+    {
+      "ID": "20250516191050214",
+      "Name": "界面处理",
+      "Desc": "",
+      "Content": "",
+      "ContentCopy": "",
+      "ParentID": "",
+      "Children": [
+        {
+          "ID": "20250516191123440",
+          "Name": "登录",
+          "Desc": "",
+          "Content": "",
+          "ContentCopy": "",
+          "ParentID": "20250516191050214",
+          "Children": [
+            {
+              "ID": "20250516191123456",
+              "Name": "登录",
+              "Desc": "",
+              "Content": "object[] multiObj = obj as object[];\r\nTextBox userName = multiObj[0] as TextBox;\r\nPasswordBox pwd = multiObj[1] as PasswordBox;\r\nWindow win = multiObj[2] as Window;\r\n\r\n//if (string.IsNullOrEmpty(userName.Text))\r\n//{\r\n//\tMessageBox.Show(\"账号不能为空\");\r\n//\treturn;\r\n//}\r\n//if (string.IsNullOrEmpty(pwd.Password))\r\n//{\r\n//\tMessageBox.Show(\"密码不能为空\");\r\n//\treturn;\r\n//}\r\n\r\n//string pass = MD5String(pwd.Password);\r\n//string LoginPort=ConfigurationManager.AppSettings[\"LoginPort\"];\r\n//var url = \"http://\"+LoginPort+\"/account/admin/login\";\r\n//var user = new\r\n//{\r\n//\taccount = userName.Text,\r\n//\tpassword = pass\r\n//};\r\n\r\n//var json = JsonConvert.SerializeObject(user);\r\n\r\n//var content = Call(\"POST\", json, url, out string error);\r\n//if (content == null)\r\n//{\r\n//\tMessageBox.Show(\"登录失败\");\r\n//\treturn;\r\n//}\r\n//var Jo = JObject.Parse(content);\r\n//if (Jo[\"code\"].ToString() != \"200\")\r\n//{\r\n//\t//创建失败\r\n//\tMessageBox.Show(\"登录失败\");\r\n//\treturn;\r\n//}\r\nTag.UI.登录.登录人 = userName.Text;\r\nWindow main = new Mainwindow();\r\nmain.Show();\r\nwin.Close();\r\n",
+              "ContentCopy": "object[] multiObj = obj as object[];\r\nTextBox userName = multiObj[0] as TextBox;\r\nPasswordBox pwd = multiObj[1] as PasswordBox;\r\nWindow win = multiObj[2] as Window;\r\n\r\n//if (string.IsNullOrEmpty(userName.Text))\r\n//{\r\n//\tMessageBox.Show(\"账号不能为空\");\r\n//\treturn;\r\n//}\r\n//if (string.IsNullOrEmpty(pwd.Password))\r\n//{\r\n//\tMessageBox.Show(\"密码不能为空\");\r\n//\treturn;\r\n//}\r\n\r\n//string pass = MD5String(pwd.Password);\r\n//string LoginPort=ConfigurationManager.AppSettings[\"LoginPort\"];\r\n//var url = \"http://\"+LoginPort+\"/account/admin/login\";\r\n//var user = new\r\n//{\r\n//\taccount = userName.Text,\r\n//\tpassword = pass\r\n//};\r\n\r\n//var json = JsonConvert.SerializeObject(user);\r\n\r\n//var content = Call(\"POST\", json, url, out string error);\r\n//if (content == null)\r\n//{\r\n//\tMessageBox.Show(\"登录失败\");\r\n//\treturn;\r\n//}\r\n//var Jo = JObject.Parse(content);\r\n//if (Jo[\"code\"].ToString() != \"200\")\r\n//{\r\n//\t//创建失败\r\n//\tMessageBox.Show(\"登录失败\");\r\n//\treturn;\r\n//}\r\nTag.UI.登录.登录人 = userName.Text;\r\nWindow main = new Mainwindow();\r\nmain.Show();\r\nwin.Close();\r\n",
+              "ParentID": "20250516191123440",
+              "Children": [],
+              "Type": "Program",
+              "Property": {
+                "SyncExec": "True",
+                "RepeatExec": "None",
+                "ExceCount": 1,
+                "ExceInternal": 5000,
+                "StartCondition": {
+                  "Type": "View",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {
+                    "20240613104159256": [
+                      "LoginCommand"
+                    ],
+                    "20250516183839936": [
+                      "LoginCommand"
+                    ]
+                  },
+                  "HmiEvent": {}
+                },
+                "EndCondition": {
+                  "Type": "None",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {},
+                  "HmiEvent": {}
+                }
+              },
+              "FullName": "界面处理.登录.登录",
+              "ParentFullName": "界面处理.登录",
+              "Enabled": "Enabled"
+            },
+            {
+              "ID": "20250516191123472",
+              "Name": "退出",
+              "Desc": "",
+              "Content": "Environment.Exit(-1); ",
+              "ContentCopy": "Environment.Exit(-1); ",
+              "ParentID": "20250516191123440",
+              "Children": [],
+              "Type": "Program",
+              "Property": {
+                "SyncExec": "True",
+                "RepeatExec": "None",
+                "ExceCount": 1,
+                "ExceInternal": 3000,
+                "StartCondition": {
+                  "Type": "View",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {
+                    "20240613104159256": [
+                      "CloseCommand"
+                    ],
+                    "20250516183839936": [
+                      "CloseCommand"
+                    ]
+                  },
+                  "HmiEvent": {}
+                },
+                "EndCondition": {
+                  "Type": "None",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {},
+                  "HmiEvent": {}
+                }
+              },
+              "FullName": "界面处理.登录.退出",
+              "ParentFullName": "界面处理.登录",
+              "Enabled": "Enabled"
+            },
+            {
+              "ID": "20250516191123488",
+              "Name": "绑定界面设备名称与编号",
+              "Desc": "",
+              "Content": "Tag.UI.登录.TXT_DeviceNo = ConfigurationManager.AppSettings[\"DeviceNo\"];\r\nTag.UI.登录.TXT_DeviceName = ConfigurationManager.AppSettings[\"DeviceName\"]; ",
+              "ContentCopy": "Tag.UI.登录.TXT_DeviceNo = ConfigurationManager.AppSettings[\"DeviceNo\"];\r\nTag.UI.登录.TXT_DeviceName = ConfigurationManager.AppSettings[\"DeviceName\"]; ",
+              "ParentID": "20250516191123440",
+              "Children": [],
+              "Type": "Program",
+              "Property": {
+                "SyncExec": "True",
+                "RepeatExec": "None",
+                "ExceCount": 1,
+                "ExceInternal": 3000,
+                "StartCondition": {
+                  "Type": "View",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {},
+                  "HmiEvent": {
+                    "20240613104159256": [
+                      "Open"
+                    ],
+                    "20250516183839936": [
+                      "Open"
+                    ]
+                  }
+                },
+                "EndCondition": {
+                  "Type": "None",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {},
+                  "HmiEvent": {}
+                }
+              },
+              "FullName": "界面处理.登录.绑定界面设备名称与编号",
+              "ParentFullName": "界面处理.登录",
+              "Enabled": "Enabled"
+            }
+          ],
+          "Type": "Group",
+          "Property": {
+            "SyncExec": "False",
+            "RepeatExec": "None",
+            "ExceCount": 1,
+            "ExceInternal": 3000,
+            "StartCondition": {
+              "Type": "None",
+              "Event": "",
+              "Expression": "",
+              "Judge": "",
+              "Command": {},
+              "HmiEvent": {}
+            },
+            "EndCondition": {
+              "Type": "None",
+              "Event": "",
+              "Expression": "",
+              "Judge": "",
+              "Command": {},
+              "HmiEvent": {}
+            }
+          },
+          "FullName": "界面处理.登录",
+          "ParentFullName": "界面处理",
+          "Enabled": "Enabled"
+        },
+        {
+          "ID": "20250516191123503",
+          "Name": "导航按钮变色",
+          "Desc": "",
+          "Content": "",
+          "ContentCopy": "",
+          "ParentID": "20250516191050214",
+          "Children": [
+            {
+              "ID": "20250516191123519",
+              "Name": "首页",
+              "Desc": "",
+              "Content": "\r\nChangeMenuColor(\"Top\");\r\nTag.UI.菜单按钮颜色.首页 = \"#FF00796B\";\r\n\r\n//Device.PLC1.OpenUI();",
+              "ContentCopy": "\r\nChangeMenuColor(\"Top\");\r\nTag.UI.菜单按钮颜色.首页 = \"#FF00796B\";\r\n\r\n//Device.PLC1.OpenUI();",
+              "ParentID": "20250516191123503",
+              "Children": [],
+              "Type": "Program",
+              "Property": {
+                "SyncExec": "True",
+                "RepeatExec": "None",
+                "ExceCount": 1,
+                "ExceInternal": 3000,
+                "StartCondition": {
+                  "Type": "View",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {
+                    "20240613105547455": [
+                      "FirstWindow"
+                    ],
+                    "20250516183840154": [
+                      "FirstWindow"
+                    ]
+                  },
+                  "HmiEvent": {}
+                },
+                "EndCondition": {
+                  "Type": "None",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {},
+                  "HmiEvent": {}
+                }
+              },
+              "FullName": "界面处理.导航按钮变色.首页",
+              "ParentFullName": "界面处理.导航按钮变色",
+              "Enabled": "Enabled"
+            },
+            {
+              "ID": "20250516191123535",
+              "Name": "退出",
+              "Desc": "",
+              "Content": "Mainwindow_CloseEvent(obj as Mainwindow,new System.ComponentModel.CancelEventArgs());",
+              "ContentCopy": "Mainwindow_CloseEvent(obj as Mainwindow,new System.ComponentModel.CancelEventArgs());",
+              "ParentID": "20250516191123503",
+              "Children": [],
+              "Type": "Program",
+              "Property": {
+                "SyncExec": "True",
+                "RepeatExec": "None",
+                "ExceCount": 1,
+                "ExceInternal": 3000,
+                "StartCondition": {
+                  "Type": "View",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {
+                    "20240613105547455": [
+                      "CloseAllCmd"
+                    ],
+                    "20250516183840154": [
+                      "CloseAllCmd"
+                    ]
+                  },
+                  "HmiEvent": {}
+                },
+                "EndCondition": {
+                  "Type": "None",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {},
+                  "HmiEvent": {}
+                }
+              },
+              "FullName": "界面处理.导航按钮变色.退出",
+              "ParentFullName": "界面处理.导航按钮变色",
+              "Enabled": "Enabled"
+            },
+            {
+              "ID": "20250516191123550",
+              "Name": "当前时间",
+              "Desc": "",
+              "Content": "Tag.UI.菜单按钮颜色.当前时间  = DateTime.Now.ToString(\"yyyy-MM-dd HH:mm:ss\"); ",
+              "ContentCopy": "Tag.UI.菜单按钮颜色.当前时间  = DateTime.Now.ToString(\"yyyy-MM-dd HH:mm:ss\"); ",
+              "ParentID": "20250516191123503",
+              "Children": [],
+              "Type": "Program",
+              "Property": {
+                "SyncExec": "False",
+                "RepeatExec": "Until",
+                "ExceCount": 1,
+                "ExceInternal": 1000,
+                "StartCondition": {
+                  "Type": "Project",
+                  "Event": "Open",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {},
+                  "HmiEvent": {}
+                },
+                "EndCondition": {
+                  "Type": "Project",
+                  "Event": "Close",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {},
+                  "HmiEvent": {}
+                }
+              },
+              "FullName": "界面处理.导航按钮变色.当前时间",
+              "ParentFullName": "界面处理.导航按钮变色",
+              "Enabled": "Enabled"
+            },
+            {
+              "ID": "20250516191123565",
+              "Name": "流程控制",
+              "Desc": "",
+              "Content": "\r\n\r\n\r\nChangeMenuColor(\"Top\");\r\nTag.UI.菜单按钮颜色.流程控制 = \"#FF00796B\";",
+              "ContentCopy": "\r\n\r\n\r\nChangeMenuColor(\"Top\");\r\nTag.UI.菜单按钮颜色.流程控制 = \"#FF00796B\";",
+              "ParentID": "20250516191123503",
+              "Children": [],
+              "Type": "Program",
+              "Property": {
+                "SyncExec": "True",
+                "RepeatExec": "None",
+                "ExceCount": 1,
+                "ExceInternal": 3000,
+                "StartCondition": {
+                  "Type": "View",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {
+                    "20240613105547455": [
+                      "流程控制命令"
+                    ],
+                    "20250516183840154": [
+                      "流程控制命令"
+                    ]
+                  },
+                  "HmiEvent": {}
+                },
+                "EndCondition": {
+                  "Type": "None",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {},
+                  "HmiEvent": {}
+                }
+              },
+              "FullName": "界面处理.导航按钮变色.流程控制",
+              "ParentFullName": "界面处理.导航按钮变色",
+              "Enabled": "Enabled"
+            },
+            {
+              "ID": "20250516191123580",
+              "Name": "关闭",
+              "Desc": "",
+              "Content": "if(PassWoreCheck())\r\n{\r\n\tInsertInfoLog(\"UI页面关闭\",$\"关闭时间：{DateTime.Now.ToString(\"yyyy/MM/dd HH:mm:ss:fff\")}\");\r\n\te.Cancel = false;\r\n}\r\nelse\r\n{\r\n\te.Cancel = true;\r\n\treturn;\r\n}",
+              "ContentCopy": "if(PassWoreCheck())\r\n{\r\n\tInsertInfoLog(\"UI页面关闭\",$\"关闭时间：{DateTime.Now.ToString(\"yyyy/MM/dd HH:mm:ss:fff\")}\");\r\n\te.Cancel = false;\r\n}\r\nelse\r\n{\r\n\te.Cancel = true;\r\n\treturn;\r\n}",
+              "ParentID": "20250516191123503",
+              "Children": [],
+              "Type": "Program",
+              "Property": {
+                "SyncExec": "True",
+                "RepeatExec": "None",
+                "ExceCount": 1,
+                "ExceInternal": 3000,
+                "StartCondition": {
+                  "Type": "View",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {},
+                  "HmiEvent": {
+                    "20240613105547455": [
+                      "Close"
+                    ],
+                    "20250516183840154": [
+                      "Close"
+                    ]
+                  }
+                },
+                "EndCondition": {
+                  "Type": "None",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {},
+                  "HmiEvent": {}
+                }
+              },
+              "FullName": "界面处理.导航按钮变色.关闭",
+              "ParentFullName": "界面处理.导航按钮变色",
+              "Enabled": "Enabled"
+            },
+            {
+              "ID": "20250516191123595",
+              "Name": "任务管理",
+              "Desc": "",
+              "Content": "ChangeMenuColor(\"Top\");\r\nTag.UI.菜单按钮颜色.任务管理 = \"#FF00796B\";",
+              "ContentCopy": "ChangeMenuColor(\"Top\");\r\nTag.UI.菜单按钮颜色.任务管理 = \"#FF00796B\";",
+              "ParentID": "20250516191123503",
+              "Children": [],
+              "Type": "Program",
+              "Property": {
+                "SyncExec": "True",
+                "RepeatExec": "None",
+                "ExceCount": 1,
+                "ExceInternal": 3000,
+                "StartCondition": {
+                  "Type": "View",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {
+                    "20240613105547455": [
+                      "任务管理命令"
+                    ],
+                    "20250516183840154": [
+                      "任务管理命令"
+                    ]
+                  },
+                  "HmiEvent": {}
+                },
+                "EndCondition": {
+                  "Type": "None",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {},
+                  "HmiEvent": {}
+                }
+              },
+              "FullName": "界面处理.导航按钮变色.任务管理",
+              "ParentFullName": "界面处理.导航按钮变色",
+              "Enabled": "Enabled"
+            },
+            {
+              "ID": "20250516191123610",
+              "Name": "报警信息",
+              "Desc": "",
+              "Content": "ChangeMenuColor(\"Top\");\r\nTag.UI.菜单按钮颜色.报警信息 = \"#FF00796B\";",
+              "ContentCopy": "ChangeMenuColor(\"Top\");\r\nTag.UI.菜单按钮颜色.报警信息 = \"#FF00796B\";",
+              "ParentID": "20250516191123503",
+              "Children": [],
+              "Type": "Program",
+              "Property": {
+                "SyncExec": "True",
+                "RepeatExec": "None",
+                "ExceCount": 1,
+                "ExceInternal": 3000,
+                "StartCondition": {
+                  "Type": "View",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {
+                    "20240613105547455": [
+                      "报警信息命令"
+                    ],
+                    "20250516183840154": [
+                      "报警信息命令"
+                    ]
+                  },
+                  "HmiEvent": {}
+                },
+                "EndCondition": {
+                  "Type": "None",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {},
+                  "HmiEvent": {}
+                }
+              },
+              "FullName": "界面处理.导航按钮变色.报警信息",
+              "ParentFullName": "界面处理.导航按钮变色",
+              "Enabled": "Enabled"
+            },
+            {
+              "ID": "20250516191123626",
+              "Name": "日志管理",
+              "Desc": "",
+              "Content": "ChangeMenuColor(\"Top\");\r\nTag.UI.菜单按钮颜色.日志管理 = \"#FF00796B\";",
+              "ContentCopy": "ChangeMenuColor(\"Top\");\r\nTag.UI.菜单按钮颜色.日志管理 = \"#FF00796B\";",
+              "ParentID": "20250516191123503",
+              "Children": [],
+              "Type": "Program",
+              "Property": {
+                "SyncExec": "True",
+                "RepeatExec": "None",
+                "ExceCount": 1,
+                "ExceInternal": 3000,
+                "StartCondition": {
+                  "Type": "View",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {
+                    "20240613105547455": [
+                      "日志查询命令",
+                      "日志管理命令"
+                    ],
+                    "20250516183840154": [
+                      "日志管理命令"
+                    ]
+                  },
+                  "HmiEvent": {}
+                },
+                "EndCondition": {
+                  "Type": "None",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {},
+                  "HmiEvent": {}
+                }
+              },
+              "FullName": "界面处理.导航按钮变色.日志管理",
+              "ParentFullName": "界面处理.导航按钮变色",
+              "Enabled": "Enabled"
+            },
+            {
+              "ID": "20250516191123642",
+              "Name": "日志管理_日志查询",
+              "Desc": "",
+              "Content": "ChangeMenuColor(\"Left_日志管理\");\r\nTag.UI.菜单按钮颜色.日志查询 = \"#FF00796B\"; \r\n",
+              "ContentCopy": "ChangeMenuColor(\"Left_日志管理\");\r\nTag.UI.菜单按钮颜色.日志查询 = \"#FF00796B\"; \r\n",
+              "ParentID": "20250516191123503",
+              "Children": [],
+              "Type": "Program",
+              "Property": {
+                "SyncExec": "True",
+                "RepeatExec": "None",
+                "ExceCount": 1,
+                "ExceInternal": 3000,
+                "StartCondition": {
+                  "Type": "View",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {
+                    "20250516104333227": [
+                      "日志查询"
+                    ],
+                    "20250516183856918": [
+                      "日志查询"
+                    ]
+                  },
+                  "HmiEvent": {}
+                },
+                "EndCondition": {
+                  "Type": "None",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {},
+                  "HmiEvent": {}
+                }
+              },
+              "FullName": "界面处理.导航按钮变色.日志管理_日志查询",
+              "ParentFullName": "界面处理.导航按钮变色",
+              "Enabled": "Enabled"
+            },
+            {
+              "ID": "20250516191123657",
+              "Name": "日志管理_点位变更记录",
+              "Desc": "",
+              "Content": "ChangeMenuColor(\"Left_日志管理\");\r\nTag.UI.菜单按钮颜色.点位历史表更记录 = \"#FF00796B\"; ",
+              "ContentCopy": "ChangeMenuColor(\"Left_日志管理\");\r\nTag.UI.菜单按钮颜色.点位历史表更记录 = \"#FF00796B\"; ",
+              "ParentID": "20250516191123503",
+              "Children": [],
+              "Type": "Program",
+              "Property": {
+                "SyncExec": "True",
+                "RepeatExec": "None",
+                "ExceCount": 1,
+                "ExceInternal": 3000,
+                "StartCondition": {
+                  "Type": "View",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {
+                    "20250516104333227": [
+                      "点位历史表更记录"
+                    ],
+                    "20250516183856918": [
+                      "点位历史表更记录"
+                    ]
+                  },
+                  "HmiEvent": {}
+                },
+                "EndCondition": {
+                  "Type": "None",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {},
+                  "HmiEvent": {}
+                }
+              },
+              "FullName": "界面处理.导航按钮变色.日志管理_点位变更记录",
+              "ParentFullName": "界面处理.导航按钮变色",
+              "Enabled": "Enabled"
+            },
+            {
+              "ID": "20250516191123672",
+              "Name": "日志管理_条码追溯",
+              "Desc": "",
+              "Content": "ChangeMenuColor(\"Left_日志管理\");\r\nTag.UI.菜单按钮颜色.条码追溯 = \"#FF00796B\"; ",
+              "ContentCopy": "ChangeMenuColor(\"Left_日志管理\");\r\nTag.UI.菜单按钮颜色.条码追溯 = \"#FF00796B\"; ",
+              "ParentID": "20250516191123503",
+              "Children": [],
+              "Type": "Program",
+              "Property": {
+                "SyncExec": "True",
+                "RepeatExec": "None",
+                "ExceCount": 1,
+                "ExceInternal": 3000,
+                "StartCondition": {
+                  "Type": "View",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {
+                    "20250516104333227": [
+                      "条码追溯"
+                    ],
+                    "20250516183856918": [
+                      "条码追溯"
+                    ]
+                  },
+                  "HmiEvent": {}
+                },
+                "EndCondition": {
+                  "Type": "None",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {},
+                  "HmiEvent": {}
+                }
+              },
+              "FullName": "界面处理.导航按钮变色.日志管理_条码追溯",
+              "ParentFullName": "界面处理.导航按钮变色",
+              "Enabled": "Enabled"
+            }
+          ],
+          "Type": "Group",
+          "Property": {
+            "SyncExec": "False",
+            "RepeatExec": "None",
+            "ExceCount": 1,
+            "ExceInternal": 3000,
+            "StartCondition": {
+              "Type": "None",
+              "Event": "",
+              "Expression": "",
+              "Judge": "",
+              "Command": {},
+              "HmiEvent": {}
+            },
+            "EndCondition": {
+              "Type": "None",
+              "Event": "",
+              "Expression": "",
+              "Judge": "",
+              "Command": {},
+              "HmiEvent": {}
+            }
+          },
+          "FullName": "界面处理.导航按钮变色",
+          "ParentFullName": "界面处理",
+          "Enabled": "Enabled"
+        },
+        {
+          "ID": "20250516191123688",
+          "Name": "密码弹窗",
+          "Desc": "",
+          "Content": "",
+          "ContentCopy": "",
+          "ParentID": "20250516191050214",
+          "Children": [
+            {
+              "ID": "20250516191123703",
+              "Name": "确认",
+              "Desc": "",
+              "Content": "/***\r\n1.拿到传入的参数密码\r\n2.查数据库对比密码是否正确\r\n   是：调公共变量关闭窗体\r\n   否：提示密码错误\r\n ***/\r\n\r\nobject[] multiObj = obj as object[];\r\nPasswordBox pwd = multiObj[0] as PasswordBox;\r\nWindow win = multiObj[1] as Certification;\r\n\r\n\r\n\r\n//var certification = obj as PasswordBox;\r\n//var str = certification.Password;\r\nstring str = pwd?.Password;\r\n//PassWordCheck();\r\n//string str = Interaction.InputBox(\"请输入密码 ： \", \"密码\", \"\", -1, -1);\r\n//if (string.IsNullOrEmpty(pwd?.Password))\r\n//{\r\n//\tMessageBox.Show(\"未输入密码 ！！！\", \"错误提示\", MessageBoxButton.OK);\r\n//\t// (Tag.立库区域.报警界面 as Certification).DialogResult = false;\r\n//\treturn;\r\n//}\r\n\r\n//查数据库判断密码\r\n//string PassWord = new DictRepository().FindEntity(t => t.DictName == \"PassWord_StoreArea\"\r\n//                                                  && t.IsTrue == true)?.DictValue;\r\n//if (PassWord != str)\r\n//{\r\n//\tMessageBox.Show(\"密码错误 ！！！\", \"错误提示\", MessageBoxButton.OK);\r\n//\t//(Tag.立库区域.报警界面 as Certification).DialogResult = false;\r\n//\treturn;\r\n//}\r\n\r\n//var frm = Tag.立库区域.报警界面 as Certification;\r\nvar frm = win as Certification;\r\nif(frm != null)\r\n{\r\n\t//(Tag.立库区域.报警界面 as Certification).DialogResult = true;\r\n\t// 委托\r\n\twin.Dispatcher.Invoke(new Action(\r\n\t\tdelegate\r\n\t\t{\r\n\t\t\twin.DialogResult = true;\r\n\t\t\twin.Close();\r\n\t\t})\r\n\t                     );\r\n}",
+              "ContentCopy": "/***\r\n1.拿到传入的参数密码\r\n2.查数据库对比密码是否正确\r\n   是：调公共变量关闭窗体\r\n   否：提示密码错误\r\n ***/\r\n\r\nobject[] multiObj = obj as object[];\r\nPasswordBox pwd = multiObj[0] as PasswordBox;\r\nWindow win = multiObj[1] as Certification;\r\n\r\n\r\n\r\n//var certification = obj as PasswordBox;\r\n//var str = certification.Password;\r\nstring str = pwd?.Password;\r\n//PassWordCheck();\r\n//string str = Interaction.InputBox(\"请输入密码 ： \", \"密码\", \"\", -1, -1);\r\n//if (string.IsNullOrEmpty(pwd?.Password))\r\n//{\r\n//\tMessageBox.Show(\"未输入密码 ！！！\", \"错误提示\", MessageBoxButton.OK);\r\n//\t// (Tag.立库区域.报警界面 as Certification).DialogResult = false;\r\n//\treturn;\r\n//}\r\n\r\n//查数据库判断密码\r\n//string PassWord = new DictRepository().FindEntity(t => t.DictName == \"PassWord_StoreArea\"\r\n//                                                  && t.IsTrue == true)?.DictValue;\r\n//if (PassWord != str)\r\n//{\r\n//\tMessageBox.Show(\"密码错误 ！！！\", \"错误提示\", MessageBoxButton.OK);\r\n//\t//(Tag.立库区域.报警界面 as Certification).DialogResult = false;\r\n//\treturn;\r\n//}\r\n\r\n//var frm = Tag.立库区域.报警界面 as Certification;\r\nvar frm = win as Certification;\r\nif(frm != null)\r\n{\r\n\t//(Tag.立库区域.报警界面 as Certification).DialogResult = true;\r\n\t// 委托\r\n\twin.Dispatcher.Invoke(new Action(\r\n\t\tdelegate\r\n\t\t{\r\n\t\t\twin.DialogResult = true;\r\n\t\t\twin.Close();\r\n\t\t})\r\n\t                     );\r\n}",
+              "ParentID": "20250516191123688",
+              "Children": [],
+              "Type": "Program",
+              "Property": {
+                "SyncExec": "True",
+                "RepeatExec": "None",
+                "ExceCount": 1,
+                "ExceInternal": 3000,
+                "StartCondition": {
+                  "Type": "View",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {
+                    "20240613110544706": [
+                      "ConfirmCmd"
+                    ],
+                    "20250516183841255": [
+                      "ConfirmCmd"
+                    ]
+                  },
+                  "HmiEvent": {}
+                },
+                "EndCondition": {
+                  "Type": "None",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {},
+                  "HmiEvent": {}
+                }
+              },
+              "FullName": "界面处理.密码弹窗.确认",
+              "ParentFullName": "界面处理.密码弹窗",
+              "Enabled": "Enabled"
+            },
+            {
+              "ID": "20250516191123719",
+              "Name": "重置",
+              "Desc": "",
+              "Content": "var certification = obj as PasswordBox;\r\ncertification.Password = \"\";",
+              "ContentCopy": "var certification = obj as PasswordBox;\r\ncertification.Password = \"\";",
+              "ParentID": "20250516191123688",
+              "Children": [],
+              "Type": "Program",
+              "Property": {
+                "SyncExec": "True",
+                "RepeatExec": "None",
+                "ExceCount": 1,
+                "ExceInternal": 3000,
+                "StartCondition": {
+                  "Type": "View",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {
+                    "20240613110544706": [
+                      "ResetCmd"
+                    ],
+                    "20250516183841255": [
+                      "ResetCmd"
+                    ]
+                  },
+                  "HmiEvent": {}
+                },
+                "EndCondition": {
+                  "Type": "None",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {},
+                  "HmiEvent": {}
+                }
+              },
+              "FullName": "界面处理.密码弹窗.重置",
+              "ParentFullName": "界面处理.密码弹窗",
+              "Enabled": "Enabled"
+            }
+          ],
+          "Type": "Group",
+          "Property": {
+            "SyncExec": "False",
+            "RepeatExec": "None",
+            "ExceCount": 1,
+            "ExceInternal": 3000,
+            "StartCondition": {
+              "Type": "None",
+              "Event": "",
+              "Expression": "",
+              "Judge": "",
+              "Command": {},
+              "HmiEvent": {}
+            },
+            "EndCondition": {
+              "Type": "None",
+              "Event": "",
+              "Expression": "",
+              "Judge": "",
+              "Command": {},
+              "HmiEvent": {}
+            }
+          },
+          "FullName": "界面处理.密码弹窗",
+          "ParentFullName": "界面处理",
+          "Enabled": "Enabled"
+        },
+        {
+          "ID": "20250516191123734",
+          "Name": "日志查询",
+          "Desc": "",
+          "Content": "",
+          "ContentCopy": "",
+          "ParentID": "20250516191050214",
+          "Children": [
+            {
+              "ID": "20250516191123750",
+              "Name": "查询",
+              "Desc": "",
+              "Content": "Get_PropertyLogs(\"First\");",
+              "ContentCopy": "Get_PropertyLogs(\"First\");",
+              "ParentID": "20250516191123734",
+              "Children": [],
+              "Type": "Program",
+              "Property": {
+                "SyncExec": "True",
+                "RepeatExec": "None",
+                "ExceCount": 1,
+                "ExceInternal": 3000,
+                "StartCondition": {
+                  "Type": "View",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {
+                    "20250515170147825": [
+                      "btn_Interaction_Logs_Select"
+                    ],
+                    "20250516183855612": [
+                      "btn_Interaction_Logs_Select"
+                    ]
+                  },
+                  "HmiEvent": {}
+                },
+                "EndCondition": {
+                  "Type": "None",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {},
+                  "HmiEvent": {}
+                }
+              },
+              "FullName": "界面处理.日志查询.查询",
+              "ParentFullName": "界面处理.日志查询",
+              "Enabled": "Enabled"
+            },
+            {
+              "ID": "20250516191123765",
+              "Name": "重置",
+              "Desc": "",
+              "Content": "\r\nTag.UI.日志查询.Text_Field=\"无\";\r\nTag.UI.日志查询.Text_QueryConditions=\"\";\r\nTag.UI.日志查询.TXT_StartTime = null;\r\nTag.UI.日志查询.TXT_EndTime = null;",
+              "ContentCopy": "\r\nTag.UI.日志查询.Text_Field=\"无\";\r\nTag.UI.日志查询.Text_QueryConditions=\"\";\r\nTag.UI.日志查询.TXT_StartTime = null;\r\nTag.UI.日志查询.TXT_EndTime = null;",
+              "ParentID": "20250516191123734",
+              "Children": [],
+              "Type": "Program",
+              "Property": {
+                "SyncExec": "True",
+                "RepeatExec": "None",
+                "ExceCount": 1,
+                "ExceInternal": 3000,
+                "StartCondition": {
+                  "Type": "View",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {
+                    "20250515170147825": [
+                      "btn_Interaction_Logs_Clear"
+                    ],
+                    "20250516183855612": [
+                      "btn_Interaction_Logs_Clear"
+                    ]
+                  },
+                  "HmiEvent": {}
+                },
+                "EndCondition": {
+                  "Type": "None",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {},
+                  "HmiEvent": {}
+                }
+              },
+              "FullName": "界面处理.日志查询.重置",
+              "ParentFullName": "界面处理.日志查询",
+              "Enabled": "Enabled"
+            },
+            {
+              "ID": "20250516191123780",
+              "Name": "首页",
+              "Desc": "",
+              "Content": "Get_PropertyLogs(\"First\");",
+              "ContentCopy": "Get_PropertyLogs(\"First\");",
+              "ParentID": "20250516191123734",
+              "Children": [],
+              "Type": "Program",
+              "Property": {
+                "SyncExec": "True",
+                "RepeatExec": "None",
+                "ExceCount": 1,
+                "ExceInternal": 3000,
+                "StartCondition": {
+                  "Type": "View",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {
+                    "20250515170147825": [
+                      "btn_Interaction_Logs_First"
+                    ],
+                    "20250516183855612": [
+                      "btn_Interaction_Logs_First"
+                    ]
+                  },
+                  "HmiEvent": {}
+                },
+                "EndCondition": {
+                  "Type": "None",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {},
+                  "HmiEvent": {}
+                }
+              },
+              "FullName": "界面处理.日志查询.首页",
+              "ParentFullName": "界面处理.日志查询",
+              "Enabled": "Enabled"
+            },
+            {
+              "ID": "20250516191123796",
+              "Name": "上页",
+              "Desc": "",
+              "Content": "Get_PropertyLogs(\"Previous\");",
+              "ContentCopy": "Get_PropertyLogs(\"Previous\");",
+              "ParentID": "20250516191123734",
+              "Children": [],
+              "Type": "Program",
+              "Property": {
+                "SyncExec": "True",
+                "RepeatExec": "None",
+                "ExceCount": 1,
+                "ExceInternal": 3000,
+                "StartCondition": {
+                  "Type": "View",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {
+                    "20250515170147825": [
+                      "btn_Interaction_Logs_Previous"
+                    ],
+                    "20250516183855612": [
+                      "btn_Interaction_Logs_Previous"
+                    ]
+                  },
+                  "HmiEvent": {}
+                },
+                "EndCondition": {
+                  "Type": "None",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {},
+                  "HmiEvent": {}
+                }
+              },
+              "FullName": "界面处理.日志查询.上页",
+              "ParentFullName": "界面处理.日志查询",
+              "Enabled": "Enabled"
+            },
+            {
+              "ID": "20250516191123812",
+              "Name": "下页",
+              "Desc": "",
+              "Content": "Get_PropertyLogs(\"Next\");",
+              "ContentCopy": "Get_PropertyLogs(\"Next\");",
+              "ParentID": "20250516191123734",
+              "Children": [],
+              "Type": "Program",
+              "Property": {
+                "SyncExec": "True",
+                "RepeatExec": "None",
+                "ExceCount": 1,
+                "ExceInternal": 3000,
+                "StartCondition": {
+                  "Type": "View",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {
+                    "20250515170147825": [
+                      "btn_Interaction_Logs_Next"
+                    ],
+                    "20250516183855612": [
+                      "btn_Interaction_Logs_Next"
+                    ]
+                  },
+                  "HmiEvent": {}
+                },
+                "EndCondition": {
+                  "Type": "None",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {},
+                  "HmiEvent": {}
+                }
+              },
+              "FullName": "界面处理.日志查询.下页",
+              "ParentFullName": "界面处理.日志查询",
+              "Enabled": "Enabled"
+            },
+            {
+              "ID": "20250516191123827",
+              "Name": "尾页",
+              "Desc": "",
+              "Content": "Get_PropertyLogs(\"Last\");",
+              "ContentCopy": "Get_PropertyLogs(\"Last\");",
+              "ParentID": "20250516191123734",
+              "Children": [],
+              "Type": "Program",
+              "Property": {
+                "SyncExec": "True",
+                "RepeatExec": "None",
+                "ExceCount": 1,
+                "ExceInternal": 3000,
+                "StartCondition": {
+                  "Type": "View",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {
+                    "20250515170147825": [
+                      "btn_Interaction_Logs_Last"
+                    ],
+                    "20250516183855612": [
+                      "btn_Interaction_Logs_Last"
+                    ]
+                  },
+                  "HmiEvent": {}
+                },
+                "EndCondition": {
+                  "Type": "None",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {},
+                  "HmiEvent": {}
+                }
+              },
+              "FullName": "界面处理.日志查询.尾页",
+              "ParentFullName": "界面处理.日志查询",
+              "Enabled": "Enabled"
+            }
+          ],
+          "Type": "Group",
+          "Property": {
+            "SyncExec": "False",
+            "RepeatExec": "None",
+            "ExceCount": 1,
+            "ExceInternal": 3000,
+            "StartCondition": {
+              "Type": "None",
+              "Event": "",
+              "Expression": "",
+              "Judge": "",
+              "Command": {},
+              "HmiEvent": {}
+            },
+            "EndCondition": {
+              "Type": "None",
+              "Event": "",
+              "Expression": "",
+              "Judge": "",
+              "Command": {},
+              "HmiEvent": {}
+            }
+          },
+          "FullName": "界面处理.日志查询",
+          "ParentFullName": "界面处理",
+          "Enabled": "Enabled"
+        },
+        {
+          "ID": "20250516191123843",
+          "Name": "点位变更记录",
+          "Desc": "",
+          "Content": "",
+          "ContentCopy": "",
+          "ParentID": "20250516191050214",
+          "Children": [
+            {
+              "ID": "20250516191123859",
+              "Name": "查询",
+              "Desc": "",
+              "Content": "Get_List_Logs(\"First\");",
+              "ContentCopy": "Get_List_Logs(\"First\");",
+              "ParentID": "20250516191123843",
+              "Children": [],
+              "Type": "Program",
+              "Property": {
+                "SyncExec": "True",
+                "RepeatExec": "None",
+                "ExceCount": 1,
+                "ExceInternal": 3000,
+                "StartCondition": {
+                  "Type": "View",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {
+                    "20250515154320400": [
+                      "btn_Hist_PlcLogs_Select"
+                    ],
+                    "20250516183842093": [
+                      "btn_Hist_PlcLogs_Select"
+                    ]
+                  },
+                  "HmiEvent": {}
+                },
+                "EndCondition": {
+                  "Type": "None",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {},
+                  "HmiEvent": {}
+                }
+              },
+              "FullName": "界面处理.点位变更记录.查询",
+              "ParentFullName": "界面处理.点位变更记录",
+              "Enabled": "Enabled"
+            },
+            {
+              "ID": "20250516191123874",
+              "Name": "重置",
+              "Desc": "",
+              "Content": "\r\nTag.UI.点位历史表更记录.Text_Field=\"无\";\r\nTag.UI.点位历史表更记录.Text_QueryConditions=\"\";\r\nTag.UI.点位历史表更记录.TXT_StartTime = null;\r\nTag.UI.点位历史表更记录.TXT_EndTime = null;",
+              "ContentCopy": "\r\nTag.UI.点位历史表更记录.Text_Field=\"无\";\r\nTag.UI.点位历史表更记录.Text_QueryConditions=\"\";\r\nTag.UI.点位历史表更记录.TXT_StartTime = null;\r\nTag.UI.点位历史表更记录.TXT_EndTime = null;",
+              "ParentID": "20250516191123843",
+              "Children": [],
+              "Type": "Program",
+              "Property": {
+                "SyncExec": "True",
+                "RepeatExec": "None",
+                "ExceCount": 1,
+                "ExceInternal": 3000,
+                "StartCondition": {
+                  "Type": "View",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {
+                    "20250515154320400": [
+                      "btn_Hist_PlcLogs_Clear"
+                    ],
+                    "20250516183842093": [
+                      "btn_Hist_PlcLogs_Clear"
+                    ]
+                  },
+                  "HmiEvent": {}
+                },
+                "EndCondition": {
+                  "Type": "None",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {},
+                  "HmiEvent": {}
+                }
+              },
+              "FullName": "界面处理.点位变更记录.重置",
+              "ParentFullName": "界面处理.点位变更记录",
+              "Enabled": "Enabled"
+            },
+            {
+              "ID": "20250516191123890",
+              "Name": "首页",
+              "Desc": "",
+              "Content": "Get_List_Logs(\"First\");",
+              "ContentCopy": "Get_List_Logs(\"First\");",
+              "ParentID": "20250516191123843",
+              "Children": [],
+              "Type": "Program",
+              "Property": {
+                "SyncExec": "True",
+                "RepeatExec": "None",
+                "ExceCount": 1,
+                "ExceInternal": 3000,
+                "StartCondition": {
+                  "Type": "View",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {
+                    "20250515154320400": [
+                      "btn_Hist_PlcLogs_First"
+                    ],
+                    "20250516183842093": [
+                      "btn_Hist_PlcLogs_First"
+                    ]
+                  },
+                  "HmiEvent": {}
+                },
+                "EndCondition": {
+                  "Type": "None",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {},
+                  "HmiEvent": {}
+                }
+              },
+              "FullName": "界面处理.点位变更记录.首页",
+              "ParentFullName": "界面处理.点位变更记录",
+              "Enabled": "Enabled"
+            },
+            {
+              "ID": "20250516191123906",
+              "Name": "上页",
+              "Desc": "",
+              "Content": "Get_List_Logs(\"Previous\");",
+              "ContentCopy": "Get_List_Logs(\"Previous\");",
+              "ParentID": "20250516191123843",
+              "Children": [],
+              "Type": "Program",
+              "Property": {
+                "SyncExec": "True",
+                "RepeatExec": "None",
+                "ExceCount": 1,
+                "ExceInternal": 3000,
+                "StartCondition": {
+                  "Type": "View",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {
+                    "20250515154320400": [
+                      "btn_Hist_PlcLogs_Previous"
+                    ],
+                    "20250516183842093": [
+                      "btn_Hist_PlcLogs_Previous"
+                    ]
+                  },
+                  "HmiEvent": {}
+                },
+                "EndCondition": {
+                  "Type": "None",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {},
+                  "HmiEvent": {}
+                }
+              },
+              "FullName": "界面处理.点位变更记录.上页",
+              "ParentFullName": "界面处理.点位变更记录",
+              "Enabled": "Enabled"
+            },
+            {
+              "ID": "20250516191123922",
+              "Name": "下页",
+              "Desc": "",
+              "Content": "Get_List_Logs(\"Next\");",
+              "ContentCopy": "Get_List_Logs(\"Next\");",
+              "ParentID": "20250516191123843",
+              "Children": [],
+              "Type": "Program",
+              "Property": {
+                "SyncExec": "True",
+                "RepeatExec": "None",
+                "ExceCount": 1,
+                "ExceInternal": 3000,
+                "StartCondition": {
+                  "Type": "View",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {
+                    "20250515154320400": [
+                      "btn_Hist_PlcLogs_Next"
+                    ],
+                    "20250516183842093": [
+                      "btn_Hist_PlcLogs_Next"
+                    ]
+                  },
+                  "HmiEvent": {}
+                },
+                "EndCondition": {
+                  "Type": "None",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {},
+                  "HmiEvent": {}
+                }
+              },
+              "FullName": "界面处理.点位变更记录.下页",
+              "ParentFullName": "界面处理.点位变更记录",
+              "Enabled": "Enabled"
+            },
+            {
+              "ID": "20250516191123938",
+              "Name": "尾页",
+              "Desc": "",
+              "Content": "Get_List_Logs(\"Last\");",
+              "ContentCopy": "Get_List_Logs(\"Last\");",
+              "ParentID": "20250516191123843",
+              "Children": [],
+              "Type": "Program",
+              "Property": {
+                "SyncExec": "True",
+                "RepeatExec": "None",
+                "ExceCount": 1,
+                "ExceInternal": 3000,
+                "StartCondition": {
+                  "Type": "View",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {
+                    "20250515154320400": [
+                      "btn_Hist_PlcLogs_Last"
+                    ],
+                    "20250516183842093": [
+                      "btn_Hist_PlcLogs_Last"
+                    ]
+                  },
+                  "HmiEvent": {}
+                },
+                "EndCondition": {
+                  "Type": "None",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {},
+                  "HmiEvent": {}
+                }
+              },
+              "FullName": "界面处理.点位变更记录.尾页",
+              "ParentFullName": "界面处理.点位变更记录",
+              "Enabled": "Enabled"
+            }
+          ],
+          "Type": "Group",
+          "Property": {
+            "SyncExec": "False",
+            "RepeatExec": "None",
+            "ExceCount": 1,
+            "ExceInternal": 3000,
+            "StartCondition": {
+              "Type": "None",
+              "Event": "",
+              "Expression": "",
+              "Judge": "",
+              "Command": {},
+              "HmiEvent": {}
+            },
+            "EndCondition": {
+              "Type": "None",
+              "Event": "",
+              "Expression": "",
+              "Judge": "",
+              "Command": {},
+              "HmiEvent": {}
+            }
+          },
+          "FullName": "界面处理.点位变更记录",
+          "ParentFullName": "界面处理",
+          "Enabled": "Enabled"
+        },
+        {
+          "ID": "20250516191123953",
+          "Name": "条码追溯",
+          "Desc": "",
+          "Content": "",
+          "ContentCopy": "",
+          "ParentID": "20250516191050214",
+          "Children": [
+            {
+              "ID": "20250516191123969",
+              "Name": "查询",
+              "Desc": "",
+              "Content": "\r\nstring headMassage = $\"=========分析条码【{Tag.UI.条码追溯.Text_QueryConditions}】=========\\r\\n\";\r\nstring orderMassage = \"---------1、WCS无任务---------\\r\\n\";//自定义\r\nstring lineMassage = \"---------2、托盘不在输送线上---------\\r\\n\";//自定义\r\nstring locMassage = \"---------3、托盘不在货位上---------\\r\\n\";//自定义\r\nstring wsrMassage = \"---------4、WCS无库存---------\\r\\n\";//自定义\r\nstring logMassage = \"---------5、WCS操作最后30条日志---------\\r\\n\";//自定义\r\nstring nuullMassage = \"\\r\\n\";\r\n\r\nvar filter = Builders<LogEntry>.Filter.Text(Tag.UI.条码追溯.Text_QueryConditions);\r\nvar projection = Builders<LogEntry>.Projection\r\n\t.Include(u => u.LocalTime)\r\n\t.Include(u => u.Message)\r\n\t.Exclude(u => u.Id);\r\nvar sort = Builders<LogEntry>.Sort.Descending(u => u.LocalTime);\r\nvar logstr = MongoDbHelper.FindWithProjectionByPage<LogEntry>(\"INFO\", filter, projection, sort, 1, 30);\r\nList<LogEntry> LogList = logstr.Items;\r\nint sn = 1;\r\nstring message=\"\";\r\nforeach (var item in LogList)\r\n{\r\n\tsn++;\r\n\tstring time = item.LocalTime.ToString() + \"\\r\\n\";\r\n\tstring mess = item.Message+ \"\\r\\n\";\r\n\r\n\tmessage+=sn+ \"        \"+ time + \"        \" + mess;\r\n}\r\nTag.UI.条码追溯.Text_Massage =message;",
+              "ContentCopy": "\r\nstring headMassage = $\"=========分析条码【{Tag.UI.条码追溯.Text_QueryConditions}】=========\\r\\n\";\r\nstring orderMassage = \"---------1、WCS无任务---------\\r\\n\";//自定义\r\nstring lineMassage = \"---------2、托盘不在输送线上---------\\r\\n\";//自定义\r\nstring locMassage = \"---------3、托盘不在货位上---------\\r\\n\";//自定义\r\nstring wsrMassage = \"---------4、WCS无库存---------\\r\\n\";//自定义\r\nstring logMassage = \"---------5、WCS操作最后30条日志---------\\r\\n\";//自定义\r\nstring nuullMassage = \"\\r\\n\";\r\n\r\nvar filter = Builders<LogEntry>.Filter.Text(Tag.UI.条码追溯.Text_QueryConditions);\r\nvar projection = Builders<LogEntry>.Projection\r\n\t.Include(u => u.LocalTime)\r\n\t.Include(u => u.Message)\r\n\t.Exclude(u => u.Id);\r\nvar sort = Builders<LogEntry>.Sort.Descending(u => u.LocalTime);\r\nvar logstr = MongoDbHelper.FindWithProjectionByPage<LogEntry>(\"INFO\", filter, projection, sort, 1, 30);\r\nList<LogEntry> LogList = logstr.Items;\r\nint sn = 1;\r\nstring message=\"\";\r\nforeach (var item in LogList)\r\n{\r\n\tsn++;\r\n\tstring time = item.LocalTime.ToString() + \"\\r\\n\";\r\n\tstring mess = item.Message+ \"\\r\\n\";\r\n\r\n\tmessage+=sn+ \"        \"+ time + \"        \" + mess;\r\n}\r\nTag.UI.条码追溯.Text_Massage =message;",
+              "ParentID": "20250516191123953",
+              "Children": [],
+              "Type": "Program",
+              "Property": {
+                "SyncExec": "True",
+                "RepeatExec": "None",
+                "ExceCount": 1,
+                "ExceInternal": 3000,
+                "StartCondition": {
+                  "Type": "View",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {
+                    "20250519205139302": [
+                      "btn_TracedBackQR_Select"
+                    ]
+                  },
+                  "HmiEvent": {}
+                },
+                "EndCondition": {
+                  "Type": "None",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {},
+                  "HmiEvent": {}
+                }
+              },
+              "FullName": "界面处理.条码追溯.查询",
+              "ParentFullName": "界面处理.条码追溯",
+              "Enabled": "Enabled"
+            },
+            {
+              "ID": "20250516191123985",
+              "Name": "重置",
+              "Desc": "",
+              "Content": "Tag.UI.条码追溯.Text_QueryConditions=\"\";\r\nTag.UI.条码追溯.Text_Massage=\"\"; ",
+              "ContentCopy": "Tag.UI.条码追溯.Text_QueryConditions=\"\";\r\nTag.UI.条码追溯.Text_Massage=\"\"; ",
+              "ParentID": "20250516191123953",
+              "Children": [],
+              "Type": "Program",
+              "Property": {
+                "SyncExec": "True",
+                "RepeatExec": "None",
+                "ExceCount": 1,
+                "ExceInternal": 3000,
+                "StartCondition": {
+                  "Type": "View",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {
+                    "20250519205139302": [
+                      "btn_TracedBackQR_Clear"
+                    ]
+                  },
+                  "HmiEvent": {}
+                },
+                "EndCondition": {
+                  "Type": "None",
+                  "Event": "",
+                  "Expression": "",
+                  "Judge": "",
+                  "Command": {},
+                  "HmiEvent": {}
+                }
+              },
+              "FullName": "界面处理.条码追溯.重置",
+              "ParentFullName": "界面处理.条码追溯",
+              "Enabled": "Enabled"
+            }
+          ],
+          "Type": "Group",
+          "Property": {
+            "SyncExec": "False",
+            "RepeatExec": "None",
+            "ExceCount": 1,
+            "ExceInternal": 3000,
+            "StartCondition": {
+              "Type": "None",
+              "Event": "",
+              "Expression": "",
+              "Judge": "",
+              "Command": {},
+              "HmiEvent": {}
+            },
+            "EndCondition": {
+              "Type": "None",
+              "Event": "",
+              "Expression": "",
+              "Judge": "",
+              "Command": {},
+              "HmiEvent": {}
+            }
+          },
+          "FullName": "界面处理.条码追溯",
+          "ParentFullName": "界面处理",
+          "Enabled": "Enabled"
+        }
+      ],
+      "Type": "Group",
+      "Property": {
+        "SyncExec": "False",
+        "RepeatExec": "None",
+        "ExceCount": 1,
+        "ExceInternal": 3000,
+        "StartCondition": {
+          "Type": "None",
+          "Event": "",
+          "Expression": "",
+          "Judge": "",
+          "Command": {},
+          "HmiEvent": {}
+        },
+        "EndCondition": {
+          "Type": "None",
+          "Event": "",
+          "Expression": "",
+          "Judge": "",
+          "Command": {},
+          "HmiEvent": {}
+        }
+      },
+      "FullName": "界面处理",
+      "ParentFullName": "",
+      "Enabled": "Enabled"
+    }
+  ],
+  "CreationTime": "2025-05-16 18:36:30",
+  "LastWriteTime": "2025-09-29 15:25:33",
+  "HasSaved": true
+}

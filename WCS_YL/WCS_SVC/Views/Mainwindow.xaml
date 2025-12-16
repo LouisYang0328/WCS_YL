@@ -1,0 +1,122 @@
+<Window x:Class="GZ.Projects.WCS_Template.Mainwindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:GZ.Projects.WCS_Template" Name="wind" Width="1920" Height="1050" Icon="../资源/gz.ico" Title="仓库控制系统-WCS系统" WindowStartupLocation="CenterScreen" mc:Ignorable="d">
+  <Window.Resources>
+    <!--菜单按钮样式-->
+    <Style x:Key="CommitButton" TargetType="Button">
+      <Setter Property="Width" Value="150" />
+      <Setter Property="Height" Value="70" />
+      <Setter Property="FontSize" Value="20" />
+      <Setter Property="Margin" Value="0,3,0,6" />
+      <Setter Property="Foreground" Value="White" />
+      <Setter Property="Background" Value="#007ACC" />
+      <Style.Triggers>
+        <Trigger Property="IsMouseOver" Value="True">
+          <!--<Setter Property="Cursor" Value="Hand" />-->
+          <Setter Property="Background" Value="LightGray" />
+        </Trigger>
+      </Style.Triggers>
+    </Style>
+  </Window.Resources>
+  <Grid Background="#EBF5FF">
+    <!--页面内容：布局-->
+    <Grid.RowDefinitions>
+      <RowDefinition Height="1*" />
+      <RowDefinition Height="10*" />
+      <RowDefinition Height="0.5*" />
+    </Grid.RowDefinitions>
+    <Border BorderBrush="Gray" BorderThickness="1" Grid.Row="0" />
+    <Grid Background="#50A0FF" Grid.Row="0">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="1*" />
+        <RowDefinition Height="1*" />
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="1.5*" />
+        <ColumnDefinition Width="2.5*" />
+        <ColumnDefinition Width="1*" />
+        <ColumnDefinition Width="1*" />
+        <ColumnDefinition Width="1*" />
+        <ColumnDefinition Width="1*" />
+        <ColumnDefinition Width="1*" />
+        <ColumnDefinition Width="1*" />
+      </Grid.ColumnDefinitions>
+      <!--中策Log-->
+      <!--<Image<Image Source="/Images/中策Log.png" />></Image>-->
+      <Image Margin="10,10,10,10" Source="../资源/log.jpg" Stretch="Fill" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" />
+      <!--项目名称-->
+      <TextBlock Margin="20,15,0,0" HorizontalAlignment="left" VerticalAlignment="Center" FontSize="30" FontWeight="Black" Grid.Column="1" Grid.Row="0">
+        仓库控制系统(WCS系统)
+      </TextBlock>
+      <WrapPanel Grid.Column="1" Grid.Row="1">
+        <TextBlock Text="-" Margin="20,0,0,0" HorizontalAlignment="left" VerticalAlignment="Center" FontSize="30" FontWeight="Black" />
+        <TextBlock Text="{Binding Tag.ProjName}" Margin="20,0,0,0" HorizontalAlignment="left" VerticalAlignment="Center" FontSize="30" FontWeight="Black" />
+        <TextBlock Text="-" Margin="20,0,0,0" HorizontalAlignment="left" VerticalAlignment="Center" FontSize="30" FontWeight="Black" />
+      </WrapPanel>
+	<!--顶端菜单按钮-->
+      <Button Command="{Binding FirstWindow}" Background="{Binding Path=Tag.UI.菜单按钮颜色.首页,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" CommandParameter="{Binding ElementName=wind}" IsEnabled="{Binding Path=Tag.UI.菜单按钮颜色.首页显示,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}" Style="{DynamicResource CommitButton}" Grid.Column="2" Grid.RowSpan="2">
+        首页
+      </Button>
+      <Button Name="流程控制按钮" Command="{Binding 流程控制命令}" Background="{Binding Path=Tag.UI.菜单按钮颜色.流程控制,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" CommandParameter="{Binding ElementName=wind}" Style="{DynamicResource CommitButton}" Grid.Column="3" Grid.RowSpan="2">
+        流程控制
+      </Button>
+      <Button Name="报警信息按钮" Command="{Binding 报警信息命令}" Background="{Binding Path=Tag.UI.菜单按钮颜色.报警信息,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" CommandParameter="{Binding ElementName=wind}" Style="{DynamicResource CommitButton}" Grid.Column="5" Grid.RowSpan="2">
+        报警管理
+      </Button>
+      <Button Name="任务管理按钮" Command="{Binding 任务管理命令}" Background="{Binding Path=Tag.UI.菜单按钮颜色.任务管理,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" CommandParameter="{Binding ElementName=wind}" Style="{DynamicResource CommitButton}" Grid.Column="4" Grid.RowSpan="2">
+        任务管理
+      </Button>
+      <Button Name="日志管理按钮" Command="{Binding 日志管理命令}" Background="{Binding Path=Tag.UI.菜单按钮颜色.日志管理,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" CommandParameter="{Binding ElementName=wind}" Style="{DynamicResource CommitButton}" Grid.Column="6" Grid.RowSpan="2">
+        日志管理
+      </Button>
+      <Button Command="{Binding CloseAllCmd}" Background="{Binding Path=Tag.UI.菜单按钮颜色.退出,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" CommandParameter="{Binding ElementName=wind}" Style="{DynamicResource CommitButton}" Grid.Column="7" Grid.RowSpan="2">
+        退出
+      </Button>
+    </Grid>
+    <Grid Grid.Row="1">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="0*" />
+        <ColumnDefinition Width="191*" />
+        <ColumnDefinition Width="287*" />
+      </Grid.ColumnDefinitions>
+      <Grid Margin="0,0,764.462,0" Background="White" Grid.Column="0" Grid.ColumnSpan="2">
+        <Border Margin="5,5,5,5" BorderBrush="Gray" BorderThickness="1">
+          <StackPanel x:Name="MenuLine" Orientation="Vertical">
+            <!--<Button Width="auto" Height="60" Margin="20,10,10,10">1111111</Button>
+                    <Button Width="auto" Height="60" Margin="20,10,10,10">1111111</Button>
+                    <Button Width="auto" Height="60" Margin="20,10,10,10">1111111</Button>-->
+          </StackPanel>
+        </Border>
+      </Grid>
+      <Grid Grid.Column="1" Grid.ColumnSpan="2">
+        <Border Margin="5,5,5,5" BorderBrush="Gray" BorderThickness="1">
+          <TabControl x:Name="tabPages" Background="#EAEEEF" BorderThickness="0" ItemsSource="{Binding Path=TabPages}">
+            <!-- 后台生成新选项卡 -->
+          </TabControl>
+        </Border>
+      </Grid>
+    </Grid>
+    <Grid Background="#F2F2F2" Grid.Row="2">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="0.5*" />
+        <ColumnDefinition />
+        <ColumnDefinition />
+      </Grid.ColumnDefinitions>
+      <Grid Grid.Column="0">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="0.2*" />
+          <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Image Source="../资源/登录人.png" Grid.Column="0" />
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="25" Text="{Binding Path=Tag.UI.登录.登录人}" Grid.Column="1" />
+      </Grid>
+      <Grid Grid.Column="1">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="0.06*" />
+          <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Image HorizontalAlignment="Left" Source="../资源/报警信息.png" Grid.Column="0" />
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="25" Foreground="Red" Text="{Binding Path=Tag.UI.菜单按钮颜色.当前报警信息}" Grid.Column="1" />
+      </Grid>
+      <TextBlock Margin="0,0,15,0" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="25" Text="{Binding Path=Tag.UI.菜单按钮颜色.当前时间}" Grid.Column="2" />
+    </Grid>
+  </Grid>
+</Window>

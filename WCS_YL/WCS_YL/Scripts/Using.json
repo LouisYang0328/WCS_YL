@@ -1,0 +1,279 @@
+{
+  "Usings": [
+    {
+      "ID": "20251202113535164",
+      "Name": "System",
+      "Desc": "",
+      "Content": "using System;",
+      "Order": 1,
+      "IsNecessary": true
+    },
+    {
+      "ID": "20251202113535165",
+      "Name": "System.Collections.Generic",
+      "Desc": "",
+      "Content": "using System.Collections.Generic;",
+      "Order": 2,
+      "IsNecessary": true
+    },
+    {
+      "ID": "20251202113535165",
+      "Name": "System.IO",
+      "Desc": "",
+      "Content": "using System.IO;",
+      "Order": 3,
+      "IsNecessary": true
+    },
+    {
+      "ID": "20251202113535165",
+      "Name": "System.Linq",
+      "Desc": "",
+      "Content": "using System.Linq;",
+      "Order": 4,
+      "IsNecessary": true
+    },
+    {
+      "ID": "20251202113535165",
+      "Name": "System.Text",
+      "Desc": "",
+      "Content": "using System.Text;",
+      "Order": 5,
+      "IsNecessary": true
+    },
+    {
+      "ID": "20251202113535165",
+      "Name": "System.Threading.Tasks",
+      "Desc": "",
+      "Content": "using System.Threading.Tasks;",
+      "Order": 6,
+      "IsNecessary": true
+    },
+    {
+      "ID": "20251202113535165",
+      "Name": "System.Windows",
+      "Desc": "",
+      "Content": "using System.Windows;",
+      "Order": 7,
+      "IsNecessary": true
+    },
+    {
+      "ID": "20251202113535165",
+      "Name": "System.Windows.Controls",
+      "Desc": "",
+      "Content": "using System.Windows.Controls;",
+      "Order": 8,
+      "IsNecessary": true
+    },
+    {
+      "ID": "20251202113535165",
+      "Name": "System.Windows.Data",
+      "Desc": "",
+      "Content": "using System.Windows.Data;",
+      "Order": 9,
+      "IsNecessary": true
+    },
+    {
+      "ID": "20251202113535165",
+      "Name": "System.Windows.Documents",
+      "Desc": "",
+      "Content": "using System.Windows.Documents;",
+      "Order": 10,
+      "IsNecessary": true
+    },
+    {
+      "ID": "20251202113535165",
+      "Name": "System.Windows.Input",
+      "Desc": "",
+      "Content": "using System.Windows.Input;",
+      "Order": 11,
+      "IsNecessary": true
+    },
+    {
+      "ID": "20251202113535165",
+      "Name": "System.Windows.Markup",
+      "Desc": "",
+      "Content": "using System.Windows.Markup;",
+      "Order": 12,
+      "IsNecessary": true
+    },
+    {
+      "ID": "20251202113535165",
+      "Name": "System.Windows.Media",
+      "Desc": "",
+      "Content": "using System.Windows.Media;",
+      "Order": 13,
+      "IsNecessary": true
+    },
+    {
+      "ID": "20251202113535165",
+      "Name": "System.Windows.Media.Imaging",
+      "Desc": "",
+      "Content": "using System.Windows.Media.Imaging;",
+      "Order": 14,
+      "IsNecessary": true
+    },
+    {
+      "ID": "20251202113535165",
+      "Name": "System.Windows.Navigation",
+      "Desc": "",
+      "Content": "using System.Windows.Navigation;",
+      "Order": 15,
+      "IsNecessary": true
+    },
+    {
+      "ID": "20251202113535165",
+      "Name": "System.Windows.Shapes",
+      "Desc": "",
+      "Content": "using System.Windows.Shapes;",
+      "Order": 16,
+      "IsNecessary": true
+    },
+    {
+      "ID": "20251202113535165",
+      "Name": "System.Runtime.Serialization",
+      "Desc": "",
+      "Content": "using System.Runtime.Serialization;",
+      "Order": 17,
+      "IsNecessary": true
+    },
+    {
+      "ID": "20251202113535165",
+      "Name": "System.Collections.Concurrent",
+      "Desc": "",
+      "Content": "using System.Collections.Concurrent;",
+      "Order": 18,
+      "IsNecessary": true
+    },
+    {
+      "ID": "20251202113535165",
+      "Name": "System.ServiceModel",
+      "Desc": "",
+      "Content": "using System.ServiceModel;",
+      "Order": 19,
+      "IsNecessary": true
+    },
+    {
+      "ID": "20251202113535165",
+      "Name": "GZ.Modular.Log",
+      "Desc": "",
+      "Content": "using GZ.Modular.Log;",
+      "Order": 20,
+      "IsNecessary": true
+    },
+    {
+      "ID": "20251202113535165",
+      "Name": "GZ.Modular.Redis",
+      "Desc": "",
+      "Content": "using GZ.Modular.Redis;",
+      "Order": 21,
+      "IsNecessary": true
+    },
+    {
+      "ID": "20251202113535165",
+      "Name": "GZ.Modular.Database",
+      "Desc": "",
+      "Content": "using GZ.Modular.Database;",
+      "Order": 22,
+      "IsNecessary": true
+    },
+    {
+      "ID": "20251202113535165",
+      "Name": "MongoDB.Driver",
+      "Desc": "",
+      "Content": "using MongoDB.Driver;",
+      "Order": 23,
+      "IsNecessary": true
+    },
+    {
+      "ID": "20251202113535165",
+      "Name": "Dapper",
+      "Desc": "",
+      "Content": "using Dapper;",
+      "Order": 24,
+      "IsNecessary": true
+    },
+    {
+      "ID": "20251202113535165",
+      "Name": "System.Configuration",
+      "Desc": "",
+      "Content": "using System.Configuration;",
+      "Order": 25,
+      "IsNecessary": true
+    },
+    {
+      "ID": "20251202113535165",
+      "Name": "MongoDB.Bson",
+      "Desc": "",
+      "Content": "using MongoDB.Bson;",
+      "Order": 26,
+      "IsNecessary": true
+    },
+    {
+      "ID": "20251202113535165",
+      "Name": "MongoDB.Bson.Serialization.Attributes",
+      "Desc": "",
+      "Content": "using MongoDB.Bson.Serialization.Attributes;",
+      "Order": 27,
+      "IsNecessary": true
+    },
+    {
+      "ID": "20251202113535165",
+      "Name": "GZ.DB.Entity.wcs_yl",
+      "Desc": "",
+      "Content": "using GZ.DB.Entity.wcs_yl;",
+      "Order": 28,
+      "IsNecessary": true
+    },
+    {
+      "ID": "20251202113535165",
+      "Name": "GZ.Common.Data",
+      "Desc": "",
+      "Content": "using GZ.Common.Data;",
+      "Order": 29,
+      "IsNecessary": true
+    },
+    {
+      "ID": "20251202113535165",
+      "Name": "System.Globalization",
+      "Desc": "",
+      "Content": "using System.Globalization;",
+      "Order": 30,
+      "IsNecessary": true
+    },
+    {
+      "ID": "20251202113535165",
+      "Name": "System.Data.Entity",
+      "Desc": "",
+      "Content": "using System.Data.Entity;",
+      "Order": 31,
+      "IsNecessary": true
+    },
+    {
+      "ID": "20251202113535165",
+      "Name": "GZ.Common.Code",
+      "Desc": "",
+      "Content": "using GZ.Common.Code;",
+      "Order": 32,
+      "IsNecessary": true
+    },
+    {
+      "ID": "20251202113535165",
+      "Name": "GZ.DB.IRepository.wcs_yl",
+      "Desc": "",
+      "Content": "using GZ.DB.IRepository.wcs_yl;",
+      "Order": 33,
+      "IsNecessary": true
+    },
+    {
+      "ID": "20251202113535165",
+      "Name": "GZ.DB.Repository.wcs_yl",
+      "Desc": "",
+      "Content": "using GZ.DB.Repository.wcs_yl;",
+      "Order": 34,
+      "IsNecessary": true
+    }
+  ],
+  "CreationTime": "2025-05-16T18:38:08.0706724+08:00",
+  "LastWriteTime": "2025-12-02T11:35:35.1659056+08:00",
+  "UsingStr": "using System;\r\nusing System.Collections.Generic;\r\nusing System.IO;\r\nusing System.Linq;\r\nusing System.Text;\r\nusing System.Threading.Tasks;\r\nusing System.Windows;\r\nusing System.Windows.Controls;\r\nusing System.Windows.Data;\r\nusing System.Windows.Documents;\r\nusing System.Windows.Input;\r\nusing System.Windows.Markup;\r\nusing System.Windows.Media;\r\nusing System.Windows.Media.Imaging;\r\nusing System.Windows.Navigation;\r\nusing System.Windows.Shapes;\r\nusing System.Runtime.Serialization;\r\nusing System.Collections.Concurrent;\r\nusing System.ServiceModel;\r\nusing GZ.Modular.Log;\r\nusing GZ.Modular.Redis;\r\nusing GZ.Modular.Database;\r\nusing MongoDB.Driver;\r\nusing Dapper;\r\nusing System.Configuration;\r\nusing MongoDB.Bson;\r\nusing MongoDB.Bson.Serialization.Attributes;\r\nusing GZ.DB.Entity.wcs_yl;\r\nusing GZ.Common.Data;\r\nusing System.Globalization;\r\nusing System.Data.Entity;\r\nusing GZ.Common.Code;\r\nusing GZ.DB.IRepository.wcs_yl;\r\nusing GZ.DB.Repository.wcs_yl;"
+}

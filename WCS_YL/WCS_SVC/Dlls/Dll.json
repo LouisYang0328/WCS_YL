@@ -1,0 +1,497 @@
+[
+  {
+    "Name": "System",
+    "Version": "4.6.1055.0",
+    "FileName": "System.dll",
+    "FileVersion": "4.6.1055.0 built by: NETFXREL2",
+    "FilePath": "\\GacDll\\v4.6.1\\System.dll",
+    "IsRequired": false,
+    "Type": "GAC"
+  },
+  {
+    "Name": "System.Data",
+    "Version": "4.6.1055.0",
+    "FileName": "System.Data.dll",
+    "FileVersion": "4.6.1055.0 built by: NETFXREL2",
+    "FilePath": "\\GacDll\\v4.6.1\\System.Data.dll",
+    "IsRequired": false,
+    "Type": "GAC"
+  },
+  {
+    "Name": "System.Xml",
+    "Version": "4.6.1055.0",
+    "FileName": "System.Xml.dll",
+    "FileVersion": "4.6.1055.0 built by: NETFXREL2",
+    "FilePath": "\\GacDll\\v4.6.1\\System.Xml.dll",
+    "IsRequired": false,
+    "Type": "GAC"
+  },
+  {
+    "Name": "Microsoft.CSharp",
+    "Version": "4.6.1055.0",
+    "FileName": "Microsoft.CSharp.dll",
+    "FileVersion": "4.6.1055.0",
+    "FilePath": "\\GacDll\\v4.6.1\\Microsoft.CSharp.dll",
+    "IsRequired": false,
+    "Type": "GAC"
+  },
+  {
+    "Name": "System.Core",
+    "Version": "4.6.1055.0",
+    "FileName": "System.Core.dll",
+    "FileVersion": "4.6.1055.0 built by: NETFXREL2",
+    "FilePath": "\\GacDll\\v4.6.1\\System.Core.dll",
+    "IsRequired": false,
+    "Type": "GAC"
+  },
+  {
+    "Name": "System.Xml.Linq",
+    "Version": "4.6.1055.0",
+    "FileName": "System.Xml.Linq.dll",
+    "FileVersion": "4.6.1055.0 built by: NETFXREL2",
+    "FilePath": "\\GacDll\\v4.6.1\\System.Xml.Linq.dll",
+    "IsRequired": false,
+    "Type": "GAC"
+  },
+  {
+    "Name": "System.Data.DataSetExtensions",
+    "Version": "4.6.1055.0",
+    "FileName": "System.Data.DataSetExtensions.dll",
+    "FileVersion": "4.6.1055.0 built by: NETFXREL2",
+    "FilePath": "\\GacDll\\v4.6.1\\System.Data.DataSetExtensions.dll",
+    "IsRequired": false,
+    "Type": "GAC"
+  },
+  {
+    "Name": "System.Net.Http",
+    "Version": "4.6.1055.0",
+    "FileName": "System.Net.Http.dll",
+    "FileVersion": "4.6.1055.0 built by: NETFXREL2",
+    "FilePath": "\\GacDll\\v4.6.1\\System.Net.Http.dll",
+    "IsRequired": false,
+    "Type": "GAC"
+  },
+  {
+    "Name": "System.Xaml",
+    "Version": "4.6.1055.0",
+    "FileName": "System.Xaml.dll",
+    "FileVersion": "4.6.1055.0 built by: NETFXREL2",
+    "FilePath": "\\GacDll\\v4.6.1\\System.Xaml.dll",
+    "IsRequired": false,
+    "Type": "GAC"
+  },
+  {
+    "Name": "WindowsBase",
+    "Version": "4.6.1055.0",
+    "FileName": "WindowsBase.dll",
+    "FileVersion": "4.6.1055.0 built by: NETFXREL2",
+    "FilePath": "\\GacDll\\v4.6.1\\WindowsBase.dll",
+    "IsRequired": false,
+    "Type": "GAC"
+  },
+  {
+    "Name": "PresentationCore",
+    "Version": "4.6.1055.0",
+    "FileName": "PresentationCore.dll",
+    "FileVersion": "4.6.1055.0 built by: NETFXREL2",
+    "FilePath": "\\GacDll\\v4.6.1\\PresentationCore.dll",
+    "IsRequired": false,
+    "Type": "GAC"
+  },
+  {
+    "Name": "PresentationFramework",
+    "Version": "4.6.1055.0",
+    "FileName": "PresentationFramework.dll",
+    "FileVersion": "4.6.1055.0",
+    "FilePath": "\\GacDll\\v4.6.1\\PresentationFramework.dll",
+    "IsRequired": false,
+    "Type": "GAC"
+  },
+  {
+    "Name": "System.Windows.Forms",
+    "Version": "4.6.1055.0",
+    "FileName": "System.Windows.Forms.dll",
+    "FileVersion": "4.6.1055.0 built by: NETFXREL2",
+    "FilePath": "\\GacDll\\v4.6.1\\System.Windows.Forms.dll",
+    "IsRequired": false,
+    "Type": "GAC"
+  },
+  {
+    "Name": "Microsoft.Practices.Prism",
+    "Version": "4.1.0.0",
+    "FileName": "Microsoft.Practices.Prism.dll",
+    "FileVersion": "4.1.0.0",
+    "FilePath": "\\GacDll\\v4.6.1\\Microsoft.Practices.Prism.dll",
+    "IsRequired": false,
+    "Type": "GAC"
+  },
+  {
+    "Name": "GZ.Modular.Redis",
+    "Version": "1.0.1.0",
+    "FileName": "GZ.Modular.Redis.dll",
+    "FileVersion": "1.0.1.0",
+    "FilePath": "\\GZ.Modular.Redis.dll",
+    "IsRequired": false,
+    "Type": "Modular"
+  },
+  {
+    "Name": "ServiceStack.Common",
+    "Version": "3.9.9.0",
+    "FileName": "ServiceStack.Common.dll",
+    "FileVersion": "3.9.9.0",
+    "FilePath": "\\ServiceStack.Common.dll",
+    "IsRequired": false,
+    "Type": "Extend"
+  },
+  {
+    "Name": "ServiceStack.Interfaces",
+    "Version": "3.9.9.0",
+    "FileName": "ServiceStack.Interfaces.dll",
+    "FileVersion": "3.9.9.0",
+    "FilePath": "\\ServiceStack.Interfaces.dll",
+    "IsRequired": false,
+    "Type": "Extend"
+  },
+  {
+    "Name": "ServiceStack.Redis",
+    "Version": "3.9.11.0",
+    "FileName": "ServiceStack.Redis.dll",
+    "FileVersion": "3.9.11.0",
+    "FilePath": "\\ServiceStack.Redis.dll",
+    "IsRequired": false,
+    "Type": "Extend"
+  },
+  {
+    "Name": "ServiceStack.Text",
+    "Version": "3.9.11.0",
+    "FileName": "ServiceStack.Text.dll",
+    "FileVersion": "3.9.11.0",
+    "FilePath": "\\ServiceStack.Text.dll",
+    "IsRequired": false,
+    "Type": "Extend"
+  },
+  {
+    "Name": "Newtonsoft.Json",
+    "Version": "13.0.1+ae9fe44e1323e91bcbd185ca1a14099fba7c021f",
+    "FileName": "Newtonsoft.Json.dll",
+    "FileVersion": "13.0.1.25517",
+    "FilePath": "\\Newtonsoft.Json.dll",
+    "IsRequired": false,
+    "Type": "Extend"
+  },
+  {
+    "Name": "System.Configuration",
+    "Version": "4.6.1055.0",
+    "FileName": "System.Configuration.dll",
+    "FileVersion": "4.6.1055.0 built by: NETFXREL2",
+    "FilePath": "\\GacDll\\v4.6.1\\System.Configuration.dll",
+    "IsRequired": false,
+    "Type": "GAC"
+  },
+  {
+    "Name": "System.Data.Linq",
+    "Version": "4.6.1055.0",
+    "FileName": "System.Data.Linq.dll",
+    "FileVersion": "4.6.1055.0",
+    "FilePath": "\\GacDll\\v4.6.1\\System.Data.Linq.dll",
+    "IsRequired": false,
+    "Type": "GAC"
+  },
+  {
+    "Name": "System.Numerics",
+    "Version": "4.6.1055.0",
+    "FileName": "System.Numerics.dll",
+    "FileVersion": "4.6.1055.0 built by: NETFXREL2",
+    "FilePath": "\\GacDll\\v4.6.1\\System.Numerics.dll",
+    "IsRequired": false,
+    "Type": "GAC"
+  },
+  {
+    "Name": "System.Runtime.CompilerServices.Unsafe",
+    "Version": "4.6.28619.01 @BuiltBy: dlab14-DDVSOWINAGE069 @Branch: release/2.1 @SrcCode: https://github.com/dotnet/corefx/tree/7601f4f6225089ffb291dc7d58293c7bbf5c5d4f",
+    "FileName": "System.Runtime.CompilerServices.Unsafe.dll",
+    "FileVersion": "4.6.28619.01",
+    "FilePath": "\\GacDll\\v4.6.1\\System.Runtime.CompilerServices.Unsafe.dll",
+    "IsRequired": false,
+    "Type": "GAC"
+  },
+  {
+    "Name": "System.Runtime.Serialization",
+    "Version": "4.6.1055.0",
+    "FileName": "System.Runtime.Serialization.dll",
+    "FileVersion": "4.6.1055.0 built by: NETFXREL2",
+    "FilePath": "\\GacDll\\v4.6.1\\System.Runtime.Serialization.dll",
+    "IsRequired": false,
+    "Type": "GAC"
+  },
+  {
+    "Name": "System.ServiceModel",
+    "Version": "4.6.1055.0",
+    "FileName": "System.ServiceModel.dll",
+    "FileVersion": "4.6.1055.0 built by: NETFXREL2",
+    "FilePath": "\\GacDll\\v4.6.1\\System.ServiceModel.dll",
+    "IsRequired": false,
+    "Type": "GAC"
+  },
+  {
+    "Name": "System.ServiceModel.Web",
+    "Version": "4.6.1055.0",
+    "FileName": "System.ServiceModel.Web.dll",
+    "FileVersion": "4.6.1055.0 built by: NETFXREL2",
+    "FilePath": "\\GacDll\\v4.6.1\\System.ServiceModel.Web.dll",
+    "IsRequired": false,
+    "Type": "GAC"
+  },
+  {
+    "Name": "System.Web",
+    "Version": "4.6.1055.0",
+    "FileName": "System.Web.dll",
+    "FileVersion": "4.6.1055.0 built by: NETFXREL2",
+    "FilePath": "\\GacDll\\v4.6.1\\System.Web.dll",
+    "IsRequired": false,
+    "Type": "GAC"
+  },
+  {
+    "Name": "System.Buffers",
+    "Version": "4.6.28619.01 @BuiltBy: dlab14-DDVSOWINAGE069 @Branch: release/2.1 @SrcCode: https://github.com/dotnet/corefx/tree/7601f4f6225089ffb291dc7d58293c7bbf5c5d4f",
+    "FileName": "System.Buffers.dll",
+    "FileVersion": "4.6.28619.01",
+    "FilePath": "\\GacDll\\v4.6.1\\System.Buffers.dll",
+    "IsRequired": false,
+    "Type": "GAC"
+  },
+  {
+    "Name": "System.Memory",
+    "Version": "4.6.28619.01 @BuiltBy: dlab14-DDVSOWINAGE069 @Branch: release/2.1 @SrcCode: https://github.com/dotnet/corefx/tree/7601f4f6225089ffb291dc7d58293c7bbf5c5d4f",
+    "FileName": "System.Memory.dll",
+    "FileVersion": "4.6.28619.01",
+    "FilePath": "\\GacDll\\v4.6.1\\System.Memory.dll",
+    "IsRequired": false,
+    "Type": "GAC"
+  },
+  {
+    "Name": "System.Numerics.Vectors",
+    "Version": "4.6.1055.0",
+    "FileName": "System.Numerics.Vectors.dll",
+    "FileVersion": "4.6.1055.0 built by: NETFXREL2",
+    "FilePath": "\\GacDll\\v4.6.1\\System.Numerics.Vectors.dll",
+    "IsRequired": false,
+    "Type": "GAC"
+  },
+  {
+    "Name": "GZ.Modular.Log",
+    "Version": "1.0.1.0",
+    "FileName": "GZ.Modular.Log.dll",
+    "FileVersion": "1.0.1.0",
+    "FilePath": "\\GZ.Modular.Log.dll",
+    "IsRequired": false,
+    "Type": "Modular"
+  },
+  {
+    "Name": "System.Data.SQLite",
+    "Version": "1.0.115.5",
+    "FileName": "System.Data.SQLite.dll",
+    "FileVersion": "1.0.115.5",
+    "FilePath": "\\System.Data.SQLite.dll",
+    "IsRequired": false,
+    "Type": "Extend"
+  },
+  {
+    "Name": "log4net",
+    "Version": "2.0.13.0-.NET 4.5",
+    "FileName": "log4net.dll",
+    "FileVersion": "2.0.13.0",
+    "FilePath": "\\log4net.dll",
+    "IsRequired": false,
+    "Type": "Extend"
+  },
+  {
+    "Name": "System.Transactions",
+    "Version": "4.6.1055.0",
+    "FileName": "System.Transactions.dll",
+    "FileVersion": "4.6.1055.0 built by: NETFXREL2",
+    "FilePath": "\\GacDll\\v4.6.1\\System.Transactions.dll",
+    "IsRequired": false,
+    "Type": "GAC"
+  },
+  {
+    "Name": "Dapper",
+    "Version": "2.1.66+bd4f75b512",
+    "FileName": "Dapper.dll",
+    "FileVersion": "2.1.66.48463",
+    "FilePath": "\\Dapper.dll",
+    "IsRequired": false,
+    "Type": "Extend"
+  },
+  {
+    "Name": "NLog",
+    "Version": "5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b",
+    "FileName": "NLog.dll",
+    "FileVersion": "5.4.0.3182",
+    "FilePath": "\\NLog.dll",
+    "IsRequired": false,
+    "Type": "Extend"
+  },
+  {
+    "Name": "NLog.Mongo",
+    "Version": "4.6.0.161+cef098b82c73c7ea710124dc1875071067e3186b",
+    "FileName": "NLog.Mongo.dll",
+    "FileVersion": "4.6.0.161",
+    "FilePath": "\\NLog.Mongo.dll",
+    "IsRequired": false,
+    "Type": "Extend"
+  },
+  {
+    "Name": "MongoDB.Driver",
+    "Version": "2.13.3+09a80e010f36974e4c9a34c85a1cc52dd56a2e06",
+    "FileName": "MongoDB.Driver.dll",
+    "FileVersion": "2.13.3.0",
+    "FilePath": "\\MongoDB.Driver.dll",
+    "IsRequired": false,
+    "Type": "Extend"
+  },
+  {
+    "Name": "MongoDB.Driver.Core",
+    "Version": "2.13.3+09a80e010f36974e4c9a34c85a1cc52dd56a2e06",
+    "FileName": "MongoDB.Driver.Core.dll",
+    "FileVersion": "2.13.3.0",
+    "FilePath": "\\MongoDB.Driver.Core.dll",
+    "IsRequired": false,
+    "Type": "Extend"
+  },
+  {
+    "Name": "MongoDB.Bson",
+    "Version": "2.13.3+09a80e010f36974e4c9a34c85a1cc52dd56a2e06",
+    "FileName": "MongoDB.Bson.dll",
+    "FileVersion": "2.13.3.0",
+    "FilePath": "\\MongoDB.Bson.dll",
+    "IsRequired": false,
+    "Type": "Extend"
+  },
+  {
+    "Name": "MongoDB.Libmongocrypt",
+    "Version": "1.2.2",
+    "FileName": "MongoDB.Libmongocrypt.dll",
+    "FileVersion": "1.2.2.0",
+    "FilePath": "\\MongoDB.Libmongocrypt.dll",
+    "IsRequired": false,
+    "Type": "Extend"
+  },
+  {
+    "Name": "DnsClient",
+    "Version": "1.4.0",
+    "FileName": "DnsClient.dll",
+    "FileVersion": "1.4.0.0",
+    "FilePath": "\\DnsClient.dll",
+    "IsRequired": false,
+    "Type": "Extend"
+  },
+  {
+    "Name": "GZ.Modular.Database",
+    "Version": "1.0.0.0",
+    "FileName": "GZ.Modular.Database.dll",
+    "FileVersion": "1.0.0.0",
+    "FilePath": "\\GZ.Modular.Database.dll",
+    "IsRequired": false,
+    "Type": "Modular"
+  },
+  {
+    "Name": "GZ.Device.PLC",
+    "Version": "1.0.0.0",
+    "FileName": "GZ.Device.PLC.dll",
+    "FileVersion": "1.0.0.0",
+    "FilePath": "\\GZ.Device.PLC.dll",
+    "IsRequired": false,
+    "Type": "Device"
+  },
+  {
+    "Name": "EntityFramework",
+    "Version": "6.1.3-40302",
+    "FileName": "EntityFramework.dll",
+    "FileVersion": "6.1.40302.0",
+    "FilePath": "\\EntityFramework.dll",
+    "IsRequired": false,
+    "Type": "Extend"
+  },
+  {
+    "Name": "EntityFramework.SqlServer",
+    "Version": "6.1.3-40302",
+    "FileName": "EntityFramework.SqlServer.dll",
+    "FileVersion": "6.1.40302.0",
+    "FilePath": "\\EntityFramework.SqlServer.dll",
+    "IsRequired": false,
+    "Type": "Extend"
+  },
+  {
+    "Name": "GZ.Common.Data",
+    "Version": "1.0.1.0",
+    "FileName": "GZ.Common.Data.dll",
+    "FileVersion": "1.0.1.0",
+    "FilePath": "\\GZ.Common.Data.dll",
+    "IsRequired": false,
+    "Type": "Extend"
+  },
+  {
+    "Name": "GZ.DB.App.WCSAPP",
+    "Version": "0.0.0.0",
+    "FileName": "GZ.DB.App.WCSAPP.dll",
+    "FileVersion": "0.0.0.0",
+    "FilePath": "\\GZ.DB.App.WCSAPP.dll",
+    "IsRequired": false,
+    "Type": "Business"
+  },
+  {
+    "Name": "GZ.DB.Entity.WCSAPP",
+    "Version": "0.0.0.0",
+    "FileName": "GZ.DB.Entity.WCSAPP.dll",
+    "FileVersion": "0.0.0.0",
+    "FilePath": "\\GZ.DB.Entity.WCSAPP.dll",
+    "IsRequired": false,
+    "Type": "Business"
+  },
+  {
+    "Name": "GZ.DB.IRepository.WCSAPP",
+    "Version": "0.0.0.0",
+    "FileName": "GZ.DB.IRepository.WCSAPP.dll",
+    "FileVersion": "0.0.0.0",
+    "FilePath": "\\GZ.DB.IRepository.WCSAPP.dll",
+    "IsRequired": false,
+    "Type": "Business"
+  },
+  {
+    "Name": "GZ.DB.Map.WCSAPP",
+    "Version": "0.0.0.0",
+    "FileName": "GZ.DB.Map.WCSAPP.dll",
+    "FileVersion": "0.0.0.0",
+    "FilePath": "\\GZ.DB.Map.WCSAPP.dll",
+    "IsRequired": false,
+    "Type": "Business"
+  },
+  {
+    "Name": "GZ.DB.Repository.WCSAPP",
+    "Version": "0.0.0.0",
+    "FileName": "GZ.DB.Repository.WCSAPP.dll",
+    "FileVersion": "0.0.0.0",
+    "FilePath": "\\GZ.DB.Repository.WCSAPP.dll",
+    "IsRequired": false,
+    "Type": "Business"
+  },
+  {
+    "Name": "ICSharpCode.SharpZipLib",
+    "Version": "",
+    "FileName": "ICSharpCode.SharpZipLib.dll",
+    "FileVersion": "0.86.0.518",
+    "FilePath": "\\ICSharpCode.SharpZipLib.dll",
+    "IsRequired": false,
+    "Type": "Local"
+  },
+  {
+    "Name": "GZ.Common.Code",
+    "Version": "1.0.2.0",
+    "FileName": "GZ.Common.Code.dll",
+    "FileVersion": "1.0.2.0",
+    "FilePath": "\\GZ.Common.Code.dll",
+    "IsRequired": false,
+    "Type": "Local"
+  }
+]

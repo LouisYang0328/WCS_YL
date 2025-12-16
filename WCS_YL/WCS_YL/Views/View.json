@@ -1,0 +1,4690 @@
+{
+  "ProjectSn": "",
+  "Directory": "",
+  "HMIs": [
+    {
+      "ID": "20250516183839936",
+      "Name": "LoginView",
+      "Desc": "",
+      "Directory": "/",
+      "FilePath": "/LoginView.xaml",
+      "FileName": "LoginView.xaml",
+      "Content": "",
+      "ParentID": "",
+      "Children": [],
+      "Type": "View",
+      "IsStartup": true,
+      "IsMainForm": false,
+      "Controls": [
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Image",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Label",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "WrapPanel",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Label",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Label",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Label",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Label",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Label",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Label",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "txtUserName",
+          "Type": "TextBox",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Label",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "txtPassword",
+          "Type": "PasswordBox",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "btnOK",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "LoginCommand",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "btnClose",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "CloseCommand",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        }
+      ],
+      "NamedControls": [
+        {
+          "Name": "txtUserName",
+          "Type": "TextBox",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "txtPassword",
+          "Type": "PasswordBox",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "btnOK",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "LoginCommand",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "btnClose",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "CloseCommand",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Commands": [
+        {
+          "Command": "LoginCommand",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "CloseCommand",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        }
+      ]
+    },
+    {
+      "ID": "20250516183840154",
+      "Name": "Mainwindow",
+      "Desc": "",
+      "Directory": "/",
+      "FilePath": "/Mainwindow.xaml",
+      "FileName": "Mainwindow.xaml",
+      "Content": "",
+      "ParentID": "",
+      "Children": [],
+      "Type": "View",
+      "IsStartup": false,
+      "IsMainForm": true,
+      "Controls": [
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Border",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Image",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "WrapPanel",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "FirstWindow",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "流程控制按钮",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "流程控制命令",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "任务管理按钮",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "任务管理命令",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "报警信息按钮",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "报警信息命令",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "日志查询按钮",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "日志查询命令",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "系统管理按钮",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "系统管理命令",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "CloseCmd",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Border",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "MenuLine",
+          "Type": "StackPanel",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Border",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "tabPages",
+          "Type": "TabControl",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Image",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Image",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        }
+      ],
+      "NamedControls": [
+        {
+          "Name": "流程控制按钮",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "流程控制命令",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "任务管理按钮",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "任务管理命令",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "报警信息按钮",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "报警信息命令",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "日志查询按钮",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "日志查询命令",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "系统管理按钮",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "系统管理命令",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "MenuLine",
+          "Type": "StackPanel",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "tabPages",
+          "Type": "TabControl",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        }
+      ],
+      "Events": [],
+      "Commands": [
+        {
+          "Command": "FirstWindow",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "流程控制命令",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "任务管理命令",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "报警信息命令",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "日志查询命令",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "系统管理命令",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "CloseCmd",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        }
+      ]
+    },
+    {
+      "ID": "20250516183840239",
+      "Name": "流程控制",
+      "Desc": "",
+      "Directory": "/",
+      "FilePath": "/流程控制.xaml",
+      "FileName": "流程控制.xaml",
+      "Content": "",
+      "ParentID": "",
+      "Children": [],
+      "Type": "View",
+      "IsStartup": false,
+      "IsMainForm": false,
+      "Controls": [
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "WrapPanel",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "自定义流程",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "tab",
+          "Type": "TabControl",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        }
+      ],
+      "NamedControls": [
+        {
+          "Name": "tab",
+          "Type": "TabControl",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        }
+      ],
+      "Events": [],
+      "Commands": [
+        {
+          "Command": "自定义流程",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        }
+      ]
+    },
+    {
+      "ID": "20250516183841097",
+      "Name": "首页",
+      "Desc": "",
+      "Directory": "/",
+      "FilePath": "/首页.xaml",
+      "FileName": "首页.xaml",
+      "Content": "",
+      "ParentID": "",
+      "Children": [],
+      "Type": "View",
+      "IsStartup": false,
+      "IsMainForm": false,
+      "Controls": [
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Image",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        }
+      ],
+      "NamedControls": [],
+      "Events": [],
+      "Commands": []
+    },
+    {
+      "ID": "20250516183841255",
+      "Name": "Certification",
+      "Desc": "",
+      "Directory": "/",
+      "FilePath": "/Certification.xaml",
+      "FileName": "Certification.xaml",
+      "Content": "",
+      "ParentID": "",
+      "Children": [],
+      "Type": "View",
+      "IsStartup": false,
+      "IsMainForm": false,
+      "Controls": [
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Label",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "psw",
+          "Type": "PasswordBox",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "ConfirmCmd",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "ResetCmd",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        }
+      ],
+      "NamedControls": [
+        {
+          "Name": "psw",
+          "Type": "PasswordBox",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        }
+      ],
+      "Events": [],
+      "Commands": [
+        {
+          "Command": "ConfirmCmd",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "ResetCmd",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        }
+      ]
+    },
+    {
+      "ID": "20250516183842093",
+      "Name": "Hist_PlcLogs",
+      "Desc": "",
+      "Directory": "/",
+      "FilePath": "/Hist_PlcLogs.xaml",
+      "FileName": "Hist_PlcLogs.xaml",
+      "Content": "",
+      "ParentID": "",
+      "Children": [],
+      "Type": "View",
+      "IsStartup": false,
+      "IsMainForm": false,
+      "Controls": [
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Border",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "ComboBox",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "ComboBox",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBox",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "DatePicker",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "DatePicker",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_Hist_PlcLogs_Select",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_Hist_PlcLogs_Clear",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "dgMission",
+          "Type": "DataGrid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Label",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_Hist_PlcLogs_First",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_Hist_PlcLogs_Previous",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_Hist_PlcLogs_Next",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_Hist_PlcLogs_Last",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        }
+      ],
+      "NamedControls": [
+        {
+          "Name": "dgMission",
+          "Type": "DataGrid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        }
+      ],
+      "Events": [],
+      "Commands": [
+        {
+          "Command": "btn_Hist_PlcLogs_Select",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_Hist_PlcLogs_Clear",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_Hist_PlcLogs_First",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_Hist_PlcLogs_Previous",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_Hist_PlcLogs_Next",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_Hist_PlcLogs_Last",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        }
+      ]
+    },
+    {
+      "ID": "20250516183855612",
+      "Name": "Interaction_Logs",
+      "Desc": "",
+      "Directory": "/",
+      "FilePath": "/Interaction_Logs.xaml",
+      "FileName": "Interaction_Logs.xaml",
+      "Content": "",
+      "ParentID": "",
+      "Children": [],
+      "Type": "View",
+      "IsStartup": false,
+      "IsMainForm": false,
+      "Controls": [
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Border",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "ComboBox",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "ComboBox",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBox",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "DatePicker",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "DatePicker",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_Interaction_Logs_Select",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_Interaction_Logs_Clear",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "dgMission",
+          "Type": "DataGrid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Label",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_Interaction_Logs_First",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_Interaction_Logs_Previous",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_Interaction_Logs_Next",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_Interaction_Logs_Last",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        }
+      ],
+      "NamedControls": [
+        {
+          "Name": "dgMission",
+          "Type": "DataGrid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        }
+      ],
+      "Events": [],
+      "Commands": [
+        {
+          "Command": "btn_Interaction_Logs_Select",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_Interaction_Logs_Clear",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_Interaction_Logs_First",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_Interaction_Logs_Previous",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_Interaction_Logs_Next",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_Interaction_Logs_Last",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        }
+      ]
+    },
+    {
+      "ID": "20250516183855785",
+      "Name": "任务管理",
+      "Desc": "",
+      "Directory": "/",
+      "FilePath": "/任务管理.xaml",
+      "FileName": "任务管理.xaml",
+      "Content": "",
+      "ParentID": "",
+      "Children": [],
+      "Type": "View",
+      "IsStartup": false,
+      "IsMainForm": false,
+      "Controls": [
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "WrapPanel",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "主任务管理",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "堆垛机任务管理",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "tab",
+          "Type": "TabControl",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        }
+      ],
+      "NamedControls": [
+        {
+          "Name": "tab",
+          "Type": "TabControl",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        }
+      ],
+      "Events": [],
+      "Commands": [
+        {
+          "Command": "主任务管理",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "堆垛机任务管理",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        }
+      ]
+    },
+    {
+      "ID": "20250516183856330",
+      "Name": "报警管理",
+      "Desc": "",
+      "Directory": "/",
+      "FilePath": "/报警管理.xaml",
+      "FileName": "报警管理.xaml",
+      "Content": "",
+      "ParentID": "",
+      "Children": [],
+      "Type": "View",
+      "IsStartup": false,
+      "IsMainForm": false,
+      "Controls": [
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "WrapPanel",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "堆垛机报警",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "报警统计",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "tab",
+          "Type": "TabControl",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        }
+      ],
+      "NamedControls": [
+        {
+          "Name": "tab",
+          "Type": "TabControl",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        }
+      ],
+      "Events": [],
+      "Commands": [
+        {
+          "Command": "堆垛机报警",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "报警统计",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        }
+      ]
+    },
+    {
+      "ID": "20250516183856918",
+      "Name": "日志管理",
+      "Desc": "",
+      "Directory": "/",
+      "FilePath": "/日志管理.xaml",
+      "FileName": "日志管理.xaml",
+      "Content": "",
+      "ParentID": "",
+      "Children": [],
+      "Type": "View",
+      "IsStartup": false,
+      "IsMainForm": false,
+      "Controls": [
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "WrapPanel",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "日志查询",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "点位历史表更记录",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "条码追溯",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "tab",
+          "Type": "TabControl",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        }
+      ],
+      "NamedControls": [
+        {
+          "Name": "tab",
+          "Type": "TabControl",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        }
+      ],
+      "Events": [],
+      "Commands": [
+        {
+          "Command": "日志查询",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "点位历史表更记录",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "条码追溯",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        }
+      ]
+    },
+    {
+      "ID": "20250519205139302",
+      "Name": "TracedBackQR",
+      "Desc": "",
+      "Directory": "/",
+      "FilePath": "/TracedBackQR.xaml",
+      "FileName": "TracedBackQR.xaml",
+      "Content": "",
+      "ParentID": "",
+      "Children": [],
+      "Type": "View",
+      "IsStartup": false,
+      "IsMainForm": false,
+      "Controls": [
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Border",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBox",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_TracedBackQR_Select",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_TracedBackQR_Clear",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "RichTextBox",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        }
+      ],
+      "NamedControls": [],
+      "Events": [],
+      "Commands": [
+        {
+          "Command": "btn_TracedBackQR_Select",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_TracedBackQR_Clear",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        }
+      ]
+    },
+    {
+      "ID": "20250903094914840",
+      "Name": "用户信息",
+      "Desc": "",
+      "Directory": "/",
+      "FilePath": "/用户信息.xaml",
+      "FileName": "用户信息.xaml",
+      "Content": "",
+      "ParentID": "",
+      "Children": [],
+      "Type": "View",
+      "IsStartup": false,
+      "IsMainForm": false,
+      "Controls": [
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Border",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_UserPermissions_Select",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_UserPermissions_Add",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_UserPermissions_Update",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_UserPermissions_Delete",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "dgMission",
+          "Type": "DataGrid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_UserPermissions_Select",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_UserPermissions_Add",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_UserPermissions_Update",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_UserPermissions_Delete",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Label",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_UserPermissions_First",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_UserPermissions_Previous",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_UserPermissions_Next",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_UserPermissions_Last",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        }
+      ],
+      "NamedControls": [
+        {
+          "Name": "dgMission",
+          "Type": "DataGrid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        }
+      ],
+      "Events": [],
+      "Commands": [
+        {
+          "Command": "btn_UserPermissions_Select",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_UserPermissions_Add",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_UserPermissions_Update",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_UserPermissions_Delete",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_UserPermissions_Select",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_UserPermissions_Add",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_UserPermissions_Update",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_UserPermissions_Delete",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_UserPermissions_First",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_UserPermissions_Previous",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_UserPermissions_Next",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_UserPermissions_Last",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        }
+      ]
+    },
+    {
+      "ID": "20250903094932478",
+      "Name": "新增用户信息",
+      "Desc": "",
+      "Directory": "/",
+      "FilePath": "/新增用户信息.xaml",
+      "FileName": "新增用户信息.xaml",
+      "Content": "",
+      "ParentID": "",
+      "Children": [],
+      "Type": "View",
+      "IsStartup": false,
+      "IsMainForm": false,
+      "Controls": [
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Label",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBox",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Label",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBox",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "CheckBox",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "Border",
+          "Type": "Border",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "btnOK",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "SaveCommand",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "btnClose",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "ClosePermissions",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        }
+      ],
+      "NamedControls": [
+        {
+          "Name": "Border",
+          "Type": "Border",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "btnOK",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "SaveCommand",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "btnClose",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "ClosePermissions",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Commands": [
+        {
+          "Command": "SaveCommand",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "ClosePermissions",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        }
+      ]
+    },
+    {
+      "ID": "20250903100446448",
+      "Name": "StackerTaskManagement",
+      "Desc": "",
+      "Directory": "/",
+      "FilePath": "/StackerTaskManagement.xaml",
+      "FileName": "StackerTaskManagement.xaml",
+      "Content": "",
+      "ParentID": "",
+      "Children": [],
+      "Type": "View",
+      "IsStartup": false,
+      "IsMainForm": false,
+      "Controls": [
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Border",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "dgMission",
+          "Type": "DataGrid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBox",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "ComboBox",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "ComboBox",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "ComboBox",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "DatePicker",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "DatePicker",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBox",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_StackerTask_Cancel",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_StackerTask_Finish",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_StackerTask_Select",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_StackerTask_Clear",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Label",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_StackerTask_First",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_StackerTask_Previous",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_StackerTask_Next",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_StackerTask_Last",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        }
+      ],
+      "NamedControls": [
+        {
+          "Name": "dgMission",
+          "Type": "DataGrid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        }
+      ],
+      "Events": [],
+      "Commands": [
+        {
+          "Command": "btn_StackerTask_Cancel",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_StackerTask_Finish",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_StackerTask_Select",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_StackerTask_Clear",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_StackerTask_First",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_StackerTask_Previous",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_StackerTask_Next",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_StackerTask_Last",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        }
+      ]
+    },
+    {
+      "ID": "20250903100813792",
+      "Name": "MainMissionManagement",
+      "Desc": "",
+      "Directory": "/",
+      "FilePath": "/MainMissionManagement.xaml",
+      "FileName": "MainMissionManagement.xaml",
+      "Content": "",
+      "ParentID": "",
+      "Children": [],
+      "Type": "View",
+      "IsStartup": false,
+      "IsMainForm": false,
+      "Controls": [
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Border",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "dgMission",
+          "Type": "DataGrid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "ComboBox",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBox",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "ComboBox",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "ComboBox",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "DatePicker",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "DatePicker",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBox",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_MainMission_Select",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_MainMission_Clear",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_MainMission_Cancel",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Label",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_MainMission_FirstPage",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_MainMission_PreviousPage",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_MainMission_NextPage",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_MainMission_LastPage",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        }
+      ],
+      "NamedControls": [
+        {
+          "Name": "dgMission",
+          "Type": "DataGrid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        }
+      ],
+      "Events": [],
+      "Commands": [
+        {
+          "Command": "btn_MainMission_Select",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_MainMission_Clear",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_MainMission_Cancel",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_MainMission_FirstPage",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_MainMission_PreviousPage",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_MainMission_NextPage",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_MainMission_LastPage",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        }
+      ]
+    },
+    {
+      "ID": "20250926140045994",
+      "Name": "系统管理",
+      "Desc": "",
+      "Directory": "/",
+      "FilePath": "/系统管理.xaml",
+      "FileName": "系统管理.xaml",
+      "Content": "",
+      "ParentID": "",
+      "Children": [],
+      "Type": "View",
+      "IsStartup": false,
+      "IsMainForm": false,
+      "Controls": [
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "WrapPanel",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "用户信息",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "设备信号",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "tab",
+          "Type": "TabControl",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        }
+      ],
+      "NamedControls": [
+        {
+          "Name": "tab",
+          "Type": "TabControl",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        }
+      ],
+      "Events": [],
+      "Commands": [
+        {
+          "Command": "用户信息",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "设备信号",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        }
+      ]
+    },
+    {
+      "ID": "20250928162148324",
+      "Name": "堆垛机报警",
+      "Desc": "",
+      "Directory": "/",
+      "FilePath": "/堆垛机报警.xaml",
+      "FileName": "堆垛机报警.xaml",
+      "Content": "",
+      "ParentID": "",
+      "Children": [],
+      "Type": "View",
+      "IsStartup": false,
+      "IsMainForm": false,
+      "Controls": [
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Border",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBox",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "ComboBox",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "DatePicker",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "DatePicker",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_StackerError_Select",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_StackerError_Clear",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_StackerError_Inport",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "dgMission",
+          "Type": "DataGrid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Label",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_StackerError_First",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_StackerError_Previous",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_StackerError_Next",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_StackerError_Last",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        }
+      ],
+      "NamedControls": [
+        {
+          "Name": "dgMission",
+          "Type": "DataGrid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        }
+      ],
+      "Events": [],
+      "Commands": [
+        {
+          "Command": "btn_StackerError_Select",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_StackerError_Clear",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_StackerError_Inport",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_StackerError_First",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_StackerError_Previous",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_StackerError_Next",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_StackerError_Last",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        }
+      ]
+    },
+    {
+      "ID": "20250928162332291",
+      "Name": "报警统计",
+      "Desc": "",
+      "Directory": "/",
+      "FilePath": "/报警统计.xaml",
+      "FileName": "报警统计.xaml",
+      "Content": "",
+      "ParentID": "",
+      "Children": [],
+      "Type": "View",
+      "IsStartup": false,
+      "IsMainForm": false,
+      "Controls": [
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Border",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "ComboBox",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "ComboBox",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "TextBlock",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "DatePicker",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_DeciceError_Select",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_DeciceError_Clear",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "dgMission",
+          "Type": "DataGrid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Label",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_DeciceError_First",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_DeciceError_Previous",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_DeciceError_Next",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "btn_DeciceError_Last",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        }
+      ],
+      "NamedControls": [
+        {
+          "Name": "dgMission",
+          "Type": "DataGrid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        }
+      ],
+      "Events": [],
+      "Commands": [
+        {
+          "Command": "btn_DeciceError_Select",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_DeciceError_Clear",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_DeciceError_First",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_DeciceError_Previous",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_DeciceError_Next",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "btn_DeciceError_Last",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        }
+      ]
+    },
+    {
+      "ID": "20251215163812749",
+      "Name": "设备信号",
+      "Desc": "",
+      "Directory": "/",
+      "FilePath": "/设备信号.xaml",
+      "FileName": "设备信号.xaml",
+      "Content": "",
+      "ParentID": "",
+      "Children": [],
+      "Type": "View",
+      "IsStartup": false,
+      "IsMainForm": false,
+      "Controls": [
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Grid",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "WrapPanel",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "PLC监控",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "PLC监控2",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "PLC监控3",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "CV01",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "CV02",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "CV03",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "",
+          "Type": "Button",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": [
+            {
+              "Command": "MEM",
+              "CommandParameter": "",
+              "ElementType": "Button",
+              "Content": ""
+            }
+          ]
+        },
+        {
+          "Name": "tab",
+          "Type": "TabControl",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        }
+      ],
+      "NamedControls": [
+        {
+          "Name": "tab",
+          "Type": "TabControl",
+          "FullType": "",
+          "Assembly": "",
+          "Events": [],
+          "Commands": []
+        }
+      ],
+      "Events": [],
+      "Commands": [
+        {
+          "Command": "PLC监控",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "PLC监控2",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "PLC监控3",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "CV01",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "CV02",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "CV03",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        },
+        {
+          "Command": "MEM",
+          "CommandParameter": "",
+          "ElementType": "Button",
+          "Content": ""
+        }
+      ]
+    }
+  ],
+  "Layouts": [
+    {
+      "ParentHMI": "Mainwindow",
+      "Command": "FirstWindow",
+      "Container": "tabPages",
+      "ChildHMI": "首页",
+      "IsDefault": true
+    },
+    {
+      "ParentHMI": "Mainwindow",
+      "Command": "流程控制命令",
+      "Container": "tabPages",
+      "ChildHMI": "流程控制",
+      "IsDefault": false
+    },
+    {
+      "ParentHMI": "Mainwindow",
+      "Command": "报警信息命令",
+      "Container": "tabPages",
+      "ChildHMI": "报警管理",
+      "IsDefault": false
+    },
+    {
+      "ParentHMI": "Mainwindow",
+      "Command": "任务管理命令",
+      "Container": "tabPages",
+      "ChildHMI": "任务管理",
+      "IsDefault": false
+    },
+    {
+      "ParentHMI": "日志管理",
+      "Command": "日志查询",
+      "Container": "tab",
+      "ChildHMI": "Interaction_Logs",
+      "IsDefault": true
+    },
+    {
+      "ParentHMI": "日志管理",
+      "Command": "点位历史表更记录",
+      "Container": "tab",
+      "ChildHMI": "Hist_PlcLogs",
+      "IsDefault": false
+    },
+    {
+      "ParentHMI": "日志管理",
+      "Command": "条码追溯",
+      "Container": "tab",
+      "ChildHMI": "TracedBackQR",
+      "IsDefault": false
+    },
+    {
+      "ParentHMI": "任务管理",
+      "Command": "主任务管理",
+      "Container": "tab",
+      "ChildHMI": "MainMissionManagement",
+      "IsDefault": true
+    },
+    {
+      "ParentHMI": "任务管理",
+      "Command": "堆垛机任务管理",
+      "Container": "tab",
+      "ChildHMI": "StackerTaskManagement",
+      "IsDefault": false
+    },
+    {
+      "ParentHMI": "Mainwindow",
+      "Command": "日志查询命令",
+      "Container": "tabPages",
+      "ChildHMI": "日志管理",
+      "IsDefault": false
+    },
+    {
+      "ParentHMI": "系统管理",
+      "Command": "用户信息",
+      "Container": "tab",
+      "ChildHMI": "用户信息",
+      "IsDefault": false
+    },
+    {
+      "ParentHMI": "Mainwindow",
+      "Command": "系统管理命令",
+      "Container": "tabPages",
+      "ChildHMI": "系统管理",
+      "IsDefault": false
+    },
+    {
+      "ParentHMI": "报警管理",
+      "Command": "堆垛机报警",
+      "Container": "tab",
+      "ChildHMI": "堆垛机报警",
+      "IsDefault": true
+    },
+    {
+      "ParentHMI": "报警管理",
+      "Command": "报警统计",
+      "Container": "tab",
+      "ChildHMI": "报警统计",
+      "IsDefault": false
+    },
+    {
+      "ParentHMI": "系统管理",
+      "Command": "设备信号",
+      "Container": "tab",
+      "ChildHMI": "设备信号",
+      "IsDefault": false
+    }
+  ],
+  "CreationTime": "2025-05-16 18:38:01",
+  "LastWriteTime": "2025-12-15 16:52:08"
+}
