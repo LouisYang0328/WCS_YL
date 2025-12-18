@@ -31,16 +31,17 @@ namespace GZ.Projects.WCS_YL
 
 			try
 			{
-				string modeValue = Conn.YLRedis.GetValue($"{suffixName}.dev_pattern"); // 设备模式 1联机自动; 2手动; 3离线; 4维修;
-				string faultValue = Conn.YLRedis.GetValue($"{suffixName}.dev_error"); // 报警 0正常
-				string stateValue = Conn.YLRedis.GetValue($"{suffixName}.dev_dispatch"); // 1正常 允许下发任务
-				string memResend = Conn.YLRedis.GetValue($"MEM.{suffixName}_Resend"); // 内存重发标志 1重发 0不重发
+				//放置外部判断
+				//string modeValue = Conn.YLRedis.GetValue($"{suffixName}.dev_pattern"); // 设备模式 1联机自动; 2手动; 3离线; 4维修;
+				//string faultValue = Conn.YLRedis.GetValue($"{suffixName}.dev_error"); // 报警 0正常
+				//string stateValue = Conn.YLRedis.GetValue($"{suffixName}.dev_dispatch"); // 1正常 允许下发任务
+				//string memResend = Conn.YLRedis.GetValue($"MEM.{suffixName}_Resend"); // 内存重发标志 1重发 0不重发
 
-				if (modeValue != "1" || faultValue != "0" || stateValue != "1" || memResend == "1")
-				{
-					msg += $"\r\n\t下发任务{suffixName}堆垛机，状态不满足，跳过{DateTime.Now:yyyy/MM/dd HH:mm:ss:fff}";
-					return;
-				}
+				//if (modeValue != "1" || faultValue != "0" || stateValue != "1" || memResend == "1")
+				//{
+				//	msg += $"\r\n\t下发任务{suffixName}堆垛机，状态不满足，跳过{DateTime.Now:yyyy/MM/dd HH:mm:ss:fff}";
+				//	return;
+				//}
 
 				// plcTaskNo 不为空或不为0就不能下发
 				string plcTaskNo = Conn.YLRedis.GetValue($"{suffixName}.dev_taskNo");
